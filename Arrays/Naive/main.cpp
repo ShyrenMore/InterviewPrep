@@ -56,6 +56,42 @@ void reverseArr(int arr[], int n)
     // Time: O(n/2) => theta(n)
 }
 
+/*
+-----------------------------------------------------------------------
+Remove Duplicates from a sorted array
+ip: arr[] = {10, 20, 20, 30, 30, 30, 30}
+op: arr[] = {10, 20, 30, _, _, _, _}
+
+Approach: Create auxilary array of same size
+copy only distinct elements 
+copy elements of distinct arrays into original arrays
+
+returns distinct els
+*/
+int removeDuplicates(int arr[], int n)
+{
+    int temp[n];
+
+    // first element will always be part of op
+    temp[0] = arr[0];
+    int distinct_els = 1;
+
+    for (int i = 0; i < n; i++)
+    {
+        // check if curr el is same as last copied el in temp arr
+        if (temp[distinct_els - 1] != arr[i])
+        {
+            temp[distinct_els] = arr[i];
+            distinct_els++;
+        }
+    }
+
+    for (int i = 0; i < distinct_els; i++)
+        arr[i] = temp[i];
+
+    return distinct_els;
+}
+
 void printArr(int arr[], int n)
 {
     cout << "\nYour array is :: ";
