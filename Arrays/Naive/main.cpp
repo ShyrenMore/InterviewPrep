@@ -92,6 +92,33 @@ int removeDuplicates(int arr[], int n)
     return distinct_els;
 }
 
+/*
+-----------------------------------------------------------------------
+Move zeros to the end while maintaing the order
+
+ip: arr[] = {8, 5, 0, 10, 0, 20}
+op: arr[] = {8, 5, 10, 20, 0, 0}
+
+Approach: Traverse the array 
+as soon as we find zero we go to right side from that el and swap non-zero element with zero
+
+*/
+void moveZerosToEnd(int arr[], int n)
+{
+    for (int i = 0; i < n; i++)
+    {
+        if(arr[i]==0)
+        {
+            for (int j = i+1; j < n; j++)
+            {
+                swap(arr[i], arr[j]);
+            }
+        }
+    }
+
+    // Time: O(n^2)
+}
+
 void printArr(int arr[], int n)
 {
     cout << "\nYour array is :: ";
