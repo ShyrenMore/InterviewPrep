@@ -68,6 +68,39 @@ int getLargest(int arr[], int n)
     // best case: arr is sorted in descending, Theta(n)
 }
 
+/*
+-----------------------------------------------------------------------
+Left rotate an array by d steps
+or
+Rotate an array in anti-clockwise direction by d steps
+
+ip: arr[] = {1, 2, 3, 4, 5}, d=2
+op: arr[] = {3, 4, 5, 1, 2} 
+
+approach: LeftRotate the el d times
+
+*/
+
+void leftRotateByOne(int arr[], int n)
+{
+    int temp = arr[0];
+    for (int i = 1; i < n; i++)
+        arr[i-1] = arr[i];
+
+    arr[n - 1] = temp;
+}
+void leftRotateBysteps(int arr[], int n, int steps)
+{
+
+    // in case steps>arr_size 
+    if(steps>n)
+        steps = n - steps;
+
+    for (int i = 0; i < steps; i++)
+        leftRotateByOne(arr, n);
+    // Time: Theta(n x d)
+}
+
 void printArr(int arr[], int n)
 {
     cout << "\nYour array is :: ";
