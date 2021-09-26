@@ -111,7 +111,8 @@ void moveZerosToEnd(int arr[], int n)
         {
             for (int j = i+1; j < n; j++)
             {
-                swap(arr[i], arr[j]);
+                if(arr[j]!=0)
+                    swap(arr[i], arr[j]);
             }
         }
     }
