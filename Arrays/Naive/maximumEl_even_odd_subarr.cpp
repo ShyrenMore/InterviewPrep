@@ -4,6 +4,7 @@
 using namespace std;
 
 /*
+Problem name: Longest even odd subarray
 
 Given an arr, find len of longest subarray containing alternating even odd elements
 
