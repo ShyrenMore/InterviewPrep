@@ -21,6 +21,9 @@ Naive: start traversing from end, Time: theta(no of ones)
 Using binary search: O(2logn) => O(logn)
 
 we call binary search for first and last ocuurences, and return (last occur idx - first occur idx +1)
+
+Ideal: find first occurence index and subtract it with total count to get the ans 
+
 */
 
 int firstOccurence(int arr[], int n, int x)
@@ -66,6 +69,31 @@ int lastOccurence(int arr[], int n, int x)
     }
 
     return -1;
+}
+
+int idealSol(int arr[], int n)
+{
+    // dry run 0011111
+    /*
+        1st itr: mid = 3, high = 2
+        2nd itr: mid = 1, low = 2
+        3rd itr: mid = 2, return(7-2)
+    */
+    int low = 0, high = n - 1;
+    while(low <= high)
+    {
+        int mid = (low + high) / 2;
+        if(arr[mid] == 0)
+            low = mid + 1;
+        else 
+        {
+            if(mid == 0 || arr[mid-1] != arr[mid])
+                return (n - mid);
+            else
+                high = mid - 1;
+        }
+    }
+    return 0;
 }
 
 int countOnes(int arr[], int n)
