@@ -78,8 +78,6 @@ int efficient(int arr[], int n)
             return arr[1];
     }
 
-    if (arr[n - 1] >= arr[n - 2])
-        return arr[n - 1];
 
     int low = 0, high = n - 1;
     while(low<=high)
