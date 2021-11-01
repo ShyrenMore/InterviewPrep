@@ -15,3 +15,12 @@ If u insert an existing key, it will overwrite the prev key
 - prefix searching (finding key that match with a prefix) // Trie
 
 ### Hashing is strict search 
+
+## Applications
+- Dictionaries
+- Database indexing
+- Crypto
+- Caches eg: browser data, urls become key and data becomes values
+- Symbol tables in compilers/interpreters
+- routers (mapping of IP/MAC address)
+- Getting data from databases (associative arrays)
