@@ -98,4 +98,37 @@ search(i){
 ## Problems with Direct index table cannot handle
 - large keys
 - floating point nos as an index
-- keys can be strings
+- keys that are strings
+
+# Idea of hashing
+
+Take a large universe of keys, eg phone nos, names, emp_ids (E1021)
+use hash function that does some black magic for converting large keys into small values that can be used as an index for hashtable
+
+- Hashtable: array that has indexes 0 to m-1
+- Hash functions: 
+
+## How Hash function do the black magic?
+
+### Some necessary requirements for hashtable
+- Every time you use the key for the hash function, it should generate same idx 
+- generate values from 0 to m-1, m is size of hash table
+- should be fast, O(1) for int and O(len) for string of length 'len'
+- Should uniformly distribute the input keys (practically impossible)
+
+### Sample hash functions
+
+1) h(large_int_key) = large_int_key % m
+2) For strings, weighted sum
+```
+str[] = "abcd"
+(str[0]*x^0 + str[1]*x^1 + str[2]*x^2 + str[3]*x^3)%m 
+```
+3) Universal Hashing
+Group of hash functions, randomly pick a hash function and use it to hash all the data in the hash table
+
+
+### Collision: Two distinct large keys when given to a hash function, convert to same small key
+
+### Typically m is chosen as prime no which are not close to powers of 2 or 10
+### bad value of m will be power of 2 or 10 for simple hash
