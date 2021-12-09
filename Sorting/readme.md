@@ -170,3 +170,44 @@ i.e (n-1) + (n-2) +...+ 2+1
     = n*(n-1)/2
     = θ(n^2) 
     ```
+
+## 5. Insertion sort
+
+- O(n^2) worst case
+- O(n) best case 
+- in-place and stable
+- used in practice for small arrays (TimSort and IntraSort)
+- Idea: Maintain a part that is already sorted, when we are at current element we insert this current element in already sorted array such that the array still remains sorted,  
+so basically when you are on index 'i' elements from 0 to i-1 must be already sorted  
+- basic dry run: <br>
+[<b>20</b>, 5, 40, 60, 10, 30] i = 1<br>
+[<b>5, 20</b>, 40, 60, 10, 30] i = 2<br>
+[<b>5, 20, 40</b>, 60, 10, 30] i = 3<br>
+[<b>5, 20, 40, 60</b>, 10, 30] i = 4<br>
+[<b>5, 20, 40, 60, 10</b>, 30] i = 5<br>
+[<b>5, 20, 40, 60, 10, 30</b>] <br>
+- Code: begin with i=1 upto last element, for each element, we store it variable key, then we go to it's left side and find correct postion in sorted array and increase the sorted array part
+```
+void insertionSort(int arr[], int n)
+{
+    for(int i = 1; i < n; i++)
+    {
+        int key = arr[i];
+        int j = i-1;
+        // right shifting greater elements
+        while(j >= 0 && arr[j] > key)
+        {
+            arr[j+1] = arr[j];
+            j--;
+        }
+        arr[j+1] = key;
+    }
+}
+```
+- [dry run wrt code]()
+- how to destablise insertion sort: ``` arr[j] >= key ```
+- TC: 
+    -  Best case: already sorted - θ(n)
+    -  Worst case: reverse sorted - θ(n^2)
+    -  In general: O(n^2)
+
