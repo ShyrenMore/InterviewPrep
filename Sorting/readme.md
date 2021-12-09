@@ -211,3 +211,12 @@ void insertionSort(int arr[], int n)
     -  Worst case: reverse sorted - θ(n^2)
     -  In general: O(n^2)
 
+## 5. Merge sort
+- divide and conquer algo (divide, conquer, merge)
+- stable algo
+- θ(nlogn) time and O(n) auxilary space
+- well suited for linked lists i.e works in O(1) space
+- well suited for external sorting, we can bring parts of memory to be sorted in RAM and sort those parts, by sorting the parts we can sort the entire array itself
+- outperformed by quicksort in general for arrays
+- before proceeding further go to [merge two sorted arrays in θ(m+n) time](merge_sorted_arr.cpp)
+
