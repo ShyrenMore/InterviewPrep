@@ -72,7 +72,7 @@ if(arr[j] > arr[j+1]) -------> for i=0, runs for n-1
 
 i.e (n-1) + (n-2) +...+ 2+1
 = n*(n-1)/2
-= theta(n^2) 
+= θ(n^2) 
 ```
 
 - Optimisation if array is sorted or becomes sorted in middle it does not do any more work
@@ -102,8 +102,71 @@ i.e (n-1) + (n-2) +...+ 2+1
     }
     ```
     - [dry run | does linear work ](opti-bubble-sort.png)
-    - Time complexity: not theta (n^2)
+    - Time complexity: not θ (n^2)
         - worst case: O(n^2)
         - best case: O(n)
-    - how to disrupt stability of bubble sort: ```arr[j] >= arr[j+1]```
-    - in-place sorting: does not require any extra array to copy org elements
+- how to disrupt stability of bubble sort: ```arr[j] >= arr[j+1]```
+- in-place sorting: does not require any extra array to copy org elements
+
+## 4. Selection sort
+
+- comparison based algo that takes θ(n^2) time 
+- does less memory writes than quicksort, mergesort, insertion sort, etc. but cycle sort is the most optimal in terms of memory writes. Memory write is very costly operation in situations like EEP-ROM, hard-disk, since age of memory will reduce
+- provides basic idea for Heap sort
+- not stable
+- in-place
+- Idea: Find out minimum element and put it at the first position, similarly find out second minimum element and put it at second position... until arr is sorted
+
+- Naive: we traverse the arr for finding minimum_el and put in index 0 of auxilary temp array and replace that element with INF, we do the same thing for rest of the elements and find the new min_el 
+    - code
+
+    ```
+    void selectSort(arr, n)
+    {
+        int temp[n];
+
+        // i == idx of temp arr
+        for(int i = 0; i < n; i++)
+        {
+            int min_ind = 0;
+            for(int j = 1; j < n; j++)
+                if(arr[j] < arr[min_ind])
+                    min_ind = j;
+            temp[i] = arr[min_ind];
+            arr[min_ind] = INF;
+        }
+
+        // copy els back to original arr
+        for(int i = 0; i < n; i++)
+            arr[i] = temp[i];
+    }
+    ```
+
+- Optimisation: eliminate auxilary array, above naive approach is not in-place sorting, to do this we use swapping 
+    - run a loop from i=0 to n-2, where elements from 0 to i are maintained to be sorted and els from i+1 to n-1 are unsorted, we try to find minimum element's index from unsorted part and store it in min_ind, once we have found the minimum element, we swap it with ```arr[i]```, 
+    - Code:
+    ``` 
+    void selectSort(arr, n)
+    {
+        for(int i = 0; i < n-1; i++)
+        {
+            min_idx = i;
+            for(int j = i + 1; j < n; j++)
+                if(arr[j] < arr[min_idx])
+                    min_idx = j
+            swap(arr[min_ind], arr[i])
+        }
+    }
+    ```
+    - [dry run](selection-sort.png)
+    - Time complexity
+    ```
+    if(arr[j] < arr[min_ind]) -------> for i=0, runs for n-1
+                                for i=1, runs for n-2
+                                ..
+                                i=n-2 runs for 1 time
+
+    i.e (n-1) + (n-2) +...+ 2+1
+    = n*(n-1)/2
+    = θ(n^2) 
+    ```
