@@ -4,9 +4,10 @@
 #define in(n, arr)              \
     for (int i = 0; i < n; i++) \
     cin >> arr[i]
-#define out(n, arr)             \
+#define out_arr(n, arr)         \
     for (int i = 0; i < n; i++) \
     cout << arr[i]
+#define op(n) cout << n << "\n"
 #define lli long long int
 #define here cout << "\nHERE\n"
 #pragma GCC optimize("O3,unroll-loops")
