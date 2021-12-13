@@ -33,6 +33,11 @@ int main()
     cin >> t;
     while (t--)
     {
+        // int n;
+        // cin >> n;
+        // vector<int> arr(n);
+        // in(n, arr);
+        // op();
     }
     return 0;
 }
