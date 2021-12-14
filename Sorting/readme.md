@@ -218,5 +218,7 @@ void insertionSort(int arr[], int n)
 - well suited for linked lists i.e works in O(1) space
 - well suited for external sorting, we can bring parts of memory to be sorted in RAM and sort those parts, by sorting the parts we can sort the entire array itself
 - outperformed by quicksort in general for arrays
-- before proceeding further go to [merge two sorted arrays in θ(m+n) time](merge_sorted_arr.cpp)
+- before proceeding further go to  
+    - [merge two sorted arrays in θ(m+n) time](merge_sorted_arr.cpp)
+    - [merge function of merge sort](merge_function.cpp)
 
