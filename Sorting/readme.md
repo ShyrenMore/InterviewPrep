@@ -219,6 +219,29 @@ void insertionSort(int arr[], int n)
 - well suited for external sorting, we can bring parts of memory to be sorted in RAM and sort those parts, by sorting the parts we can sort the entire array itself
 - outperformed by quicksort in general for arrays
 - before proceeding further go to  
-    - [merge two sorted arrays in θ(m+n) time](merge_sorted_arr.cpp)
-    - [merge function of merge sort](merge_function.cpp)
+    - [merge two sorted arrays in θ(m+n) time](2_merge_sorted_arr.cpp)
+    - [merge function of merge sort](3_merge_function.cpp)
+- Idea: we find midpoint of indices, we recursively sort the array from l to mid i.e first half or left half, and similarly we recusrively sort the right half.   
+After sorting each half, we call merge function to sort the two sorted sub-arrays
+- Code 
 
+```
+void mergeSort(int arr[], int l, int r)
+{
+    // check for at least two els
+    if(r > l)
+    {
+        // m = (l+r)/2 
+        int m = l + (r-1)/2;
+
+        mergeSort(arr, l, m);
+        mergeSort(arr, m+1, r);
+        merge(arr, l, m, r);
+    }
+}
+```
+- [dry run]()
+- Why space complexity is θ(n) and not θ(nlogn), since for each branch of recursion tree θ(n) space is required and there are total logn branches, so it should be θ(n)
+    - Ans: At point in RAM, only θ(n) will be used, since after each recusrive call the allocated space is deallocated 
+- Problems based on merge sort:
+    - [Intersection]()
