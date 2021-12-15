@@ -61,7 +61,7 @@ void bubbleSort(arr, n)
                 swap(arr[j], arr[j+1]);
 }
 ```
-- [dry run](bubblesort.png)
+- [dry run](imgs/bubble_sort.jpg)
 
 - Time complexity
 ```
@@ -101,7 +101,7 @@ i.e (n-1) + (n-2) +...+ 2+1
         }
     }
     ```
-    - [dry run | does linear work ](opti-bubble-sort.png)
+    - [dry run | does linear work ](imgs/optimised_bsort.jpg)
     - Time complexity: not θ (n^2)
         - worst case: O(n^2)
         - best case: O(n)
@@ -158,7 +158,7 @@ i.e (n-1) + (n-2) +...+ 2+1
         }
     }
     ```
-    - [dry run](selection-sort.png)
+    - [dry run](imgs/selection_sort.jpg)
     - Time complexity
     ```
     if(arr[j] < arr[min_ind]) -------> for i=0, runs for n-1
@@ -204,7 +204,7 @@ void insertionSort(int arr[], int n)
     }
 }
 ```
-- [dry run wrt code]()
+- [dry run wrt code](imgs/insertion_sort.jpg)
 - how to destablise insertion sort: ``` arr[j] >= key ```
 - TC: 
     -  Best case: already sorted - θ(n)
@@ -240,8 +240,9 @@ void mergeSort(int arr[], int l, int r)
     }
 }
 ```
-- [dry run]()
+- [dry run](imgs/merge_sort.jpg)
 - Why space complexity is θ(n) and not θ(nlogn), since for each branch of recursion tree θ(n) space is required and there are total logn branches, so it should be θ(n)
     - Ans: At point in RAM, only θ(n) will be used, since after each recusrive call the allocated space is deallocated 
-- Problems based on merge sort:
-    - [Intersection]()
+
+## Misc Problems:
+    - [Intersection of two sorted arrays](4_intersection.cpp)
