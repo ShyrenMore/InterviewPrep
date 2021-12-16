@@ -92,6 +92,34 @@ bool isSum(int arr[], int n, int given_sum)
     return (curr_sum == given_sum);
 }
 
+/*
+
+Problem 3 Print N-bonacci numbers: c
+n-bonacci means every element is sum of prev n-elements
+first n-1 elements of series are zeroes, after that we get 1
+
+expected complexity: O(m), O(nm)
+
+Compute sum of preb
+ip: n=3, m=8
+op: 0 0 1 1 2 4 7 13
+
+ip: n=4, m=10
+op: 0 0 0 1 1 2 4 8 15 29
+
+*/
+
+/*
+
+Problem 4 Count distinct elements in every window of size k: 
+Skip if hashing is not done
+
+ip: arr[] = {1, 2, 1, 3, 4, 3, 3}, K=4
+op: 3 4 3 2
+
+Expected Time: O(n) using sliding window
+               O(n*k) using hashing
+*/
 
 int main()
 {
