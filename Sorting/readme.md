@@ -245,4 +245,5 @@ void mergeSort(int arr[], int l, int r)
     - Ans: At point in RAM, only θ(n) will be used, since after each recusrive call the allocated space is deallocated 
 
 ## Misc Problems:
-    - [Intersection of two sorted arrays](4_intersection.cpp)
+    - [Intersection of two sorted arrays, based on merge function](4_intersection.cpp)
+    - [Union of two sorted arrays](5_union.cpp)
