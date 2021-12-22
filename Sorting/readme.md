@@ -211,7 +211,7 @@ void insertionSort(int arr[], int n)
     -  Worst case: reverse sorted - θ(n^2)
     -  In general: O(n^2)
 
-## 5. Merge sort
+## 6. Merge sort
 - divide and conquer algo (divide, conquer, merge)
 - stable algo
 - θ(nlogn) time and O(n) auxilary space
@@ -243,6 +243,11 @@ void mergeSort(int arr[], int l, int r)
 - [dry run](imgs/merge_sort.jpg)
 - Why space complexity is θ(n) and not θ(nlogn), since for each branch of recursion tree θ(n) space is required and there are total logn branches, so it should be θ(n)
     - Ans: At point in RAM, only θ(n) will be used, since after each recusrive call the allocated space is deallocated 
+
+## 7. Quick sort
+
+- before proceeding further go to  
+    - [Partition function of quicksort](7_quicksort_partition.cpp)
 
 ## Misc Problems:
 - [Intersection of two sorted arrays, based on merge function](4_intersection.cpp)
