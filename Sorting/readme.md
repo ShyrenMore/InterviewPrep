@@ -246,8 +246,18 @@ void mergeSort(int arr[], int l, int r)
 
 ## 7. Quick sort
 
+- divide and conquer algo (divide, conquer, partition)
+- not-stable algo
+- O(n^2) time 
+- despite having O(n^2) time, it is considered faster than merge sort since it is
+    - in-place
+    - cache friendly, merge sort creates aux arrays, but quicksort does not
+    - average case in O(nlogn)
+    - tail recursive: if a recursive function, does recursion at a last thing, they can be re-written in loops using goto statements
+- partition is key function
 - before proceeding further go to  
     - [Partition function of quicksort](7_quicksort_partition.cpp)
+
 
 ## Misc Problems:
 - [Intersection of two sorted arrays, based on merge function](4_intersection.cpp)
