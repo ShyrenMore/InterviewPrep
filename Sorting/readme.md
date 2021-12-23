@@ -62,6 +62,9 @@ void bubbleSort(arr, n)
 }
 ```
 - [dry run](imgs/bubble_sort.jpg)
+<p align="center">
+<img src="imgs/bubble_sort.jpg" width="580px" alt="sort" title="sort"/>
+</p>
 
 - Time complexity
 ```
@@ -102,6 +105,10 @@ i.e (n-1) + (n-2) +...+ 2+1
     }
     ```
     - [dry run | does linear work ](imgs/optimised_bsort.jpg)
+    <p align="center">
+    <img src="imgs/optimised_bsort.jpg" width="580px" alt="sort" title="sort"/>
+    </p>
+
     - Time complexity: not θ (n^2)
         - worst case: O(n^2)
         - best case: O(n)
@@ -159,6 +166,10 @@ i.e (n-1) + (n-2) +...+ 2+1
     }
     ```
     - [dry run](imgs/selection_sort.jpg)
+    <p align="center">
+    <img src="imgs/selection_sort.jpg" width="580px" alt="sort" title="sort"/>
+    </p>
+
     - Time complexity
     ```
     if(arr[j] < arr[min_ind]) -------> for i=0, runs for n-1
@@ -205,6 +216,10 @@ void insertionSort(int arr[], int n)
 }
 ```
 - [dry run wrt code](imgs/insertion_sort.jpg)
+<p align="center">
+  <img src="imgs/insertion_sort.jpg" width="580px" alt="sort" title="sort"/>
+</p>
+
 - how to destablise insertion sort: ``` arr[j] >= key ```
 - TC: 
     -  Best case: already sorted - θ(n)
@@ -276,9 +291,11 @@ void quickSort(int arr[], int l, int h)
 }
 ```
 - dry run 
+<p align="center">
+  <img src="imgs/quick_sort.jpg" width="580px" alt="sort" title="sort"/>
+</p>
 
-
-
+### for best and worst case calculations, kindly see techknowledge
 
 ## Misc Problems:
 - [Intersection of two sorted arrays, based on merge function](4_intersection.cpp)
