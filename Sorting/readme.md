@@ -241,6 +241,9 @@ void mergeSort(int arr[], int l, int r)
 }
 ```
 - [dry run](imgs/merge_sort.jpg)
+<p align="center">
+  <img src="imgs/merge_sort.jpg" width="580px" alt="mergesort" title="mergesort"/>
+</p>
 - Why space complexity is θ(n) and not θ(nlogn), since for each branch of recursion tree θ(n) space is required and there are total logn branches, so it should be θ(n)
     - Ans: At point in RAM, only θ(n) will be used, since after each recusrive call the allocated space is deallocated 
 
@@ -257,6 +260,24 @@ void mergeSort(int arr[], int l, int r)
 - partition is key function
 - before proceeding further go to  
     - [Partition function of quicksort](7_quicksort_partition.cpp)
+- Idea: we have a partition algo, that takes a pivot and divides array elements around that pivot, 
+those different partitions can be sorted independently until whole array gets sorted 
+- Code 
+
+```
+void quickSort(int arr[], int l, int h)
+{
+    if(l<h)
+    {
+        int p = partition(arr, l, h);
+        quickSort(arr, l, p);
+        quickSort(arr, p+1, h);
+    }
+}
+```
+- dry run 
+
+
 
 
 ## Misc Problems:

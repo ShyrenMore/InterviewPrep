@@ -138,8 +138,8 @@ i=4, 8<5 stop
 j=3, 4>5 stop
 
 i has cross j, return 3
-at idx=3, el at right side are greater than pivot
-el at left are smaller than pivot
+
+which implies elements from 0 to 3 are smaller than elements from 4 to 7
 */
 
 /*
