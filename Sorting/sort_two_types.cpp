@@ -100,6 +100,26 @@ void eff_segregatePosNeg(int arr[], int n)
     }
 }
 
+void eff_segregateEvenOdd(int arr[], int n) 
+{
+    int i = -1, j = n;
+    while(true)
+    {
+        do{
+            ++i;
+        } while (arr[i] % 2 == 0);
+        do
+        {
+            --j;
+        } while (arr[j] % 2 != 0);
+
+        if(i>=j)
+            return;
+
+        swap(arr[i], arr[j]);
+    }
+}    
+
 int main()
 {
     int n;
@@ -109,17 +129,34 @@ int main()
         cin >> arr[i];
 
     // naive_segregatePosNeg(arr, n);
-    eff_segregatePosNeg(arr, n);
+    // eff_segregatePosNeg(arr, n);
+    eff_segregateEvenOdd(arr, n);
     for (int i = 0; i < n; i++)
         cout << arr[i] << " ";
     return 0;
 }
 
 /*
+
+for pos and neg
+
 ip:
 4
 15 -3 -2 18
 
 op:
 -2 -3 15 18
+*/
+
+/*
+
+for even odd
+
+ip:
+6
+2 7 9 3 12 8
+
+op:
+2 8 12 3 9 7
+
 */
