@@ -303,4 +303,8 @@ void quickSort(int arr[], int l, int h)
 - [Count inversions in an array](6_inversion.cpp)
 - [Chocolate distribution problem](chocalate_dist.cpp)
 - [Sort an array with two types of els](sort_two_types.cpp)
+    - segregate +ve/-ve nos
+    - segregate even/odd nos
+    - sort a binary array in O(n), unstable
+    
 - [Sort an array with three types of els](sort_three_types.cpp)

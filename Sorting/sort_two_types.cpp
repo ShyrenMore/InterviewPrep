@@ -120,6 +120,27 @@ void eff_segregateEvenOdd(int arr[], int n)
     }
 }    
 
+void eff_binsort(int arr[], int n)
+{
+    int i = -1, j = n;
+    while(true)
+    {
+        do{
+            ++i;
+        } while (arr[i] != 1);
+
+        do{
+            --j;
+        } while (arr[j] != 0);
+
+        // cout << i << " " << j << "\n";
+        if(i>=j)
+            return;
+
+        swap(arr[i], arr[j]);
+    }
+}
+
 int main()
 {
     int n;
@@ -130,7 +151,8 @@ int main()
 
     // naive_segregatePosNeg(arr, n);
     // eff_segregatePosNeg(arr, n);
-    eff_segregateEvenOdd(arr, n);
+    // eff_segregateEvenOdd(arr, n);
+    eff_binsort(arr, n);
     for (int i = 0; i < n; i++)
         cout << arr[i] << " ";
     return 0;
