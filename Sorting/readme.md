@@ -301,10 +301,19 @@ void quickSort(int arr[], int l, int h)
 - [Intersection of two sorted arrays, based on merge function](4_intersection.cpp)
 - [Union of two sorted arrays](5_union.cpp)
 - [Count inversions in an array](6_inversion.cpp)
-- [Chocolate distribution problem](chocalate_dist.cpp)
-- [Sort an array with two types of els](sort_two_types.cpp)
+- [Chocolate distribution problem](8_chocolate_dist.cpp)
+- [Sort an array with two types of els based on partition function](9_sort_two_types.cpp)
     - segregate +ve/-ve nos
     - segregate even/odd nos
     - sort a binary array in O(n), unstable
     
-- [Sort an array with three types of els](sort_three_types.cpp)
+- [Sort an array with three types of els based on partition function](10_sort_three_types.cpp)
+    - sort an array of 0s, 1s and 2s
+    - three way partitioning
+    - partition around a range
+    - dry run
+    <p align="center">
+    <img src="imgs/dutch_national_flag.jpg" width="580px" alt="sort" title="sort"/>
+    </p>
+
+- [Minimum difference in an array](11_min_diff.cpp)
