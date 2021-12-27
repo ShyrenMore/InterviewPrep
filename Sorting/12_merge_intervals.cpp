@@ -153,4 +153,7 @@ output
 5 15
 18 30
 
+expected output
+2 15
+18 30
 */
