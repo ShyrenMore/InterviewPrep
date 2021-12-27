@@ -134,7 +134,8 @@ int main()
     for (int i = 0; i < n; i++)
         cin >> arr[i];
 
-    naive_sort_0_1_2s(arr, n);
+    // naive_sort_0_1_2s(arr, n);
+    eff_sort_0_1_2s(arr, n);
     for (int i = 0; i < n; i++)
         cout << arr[i] << " ";
 
