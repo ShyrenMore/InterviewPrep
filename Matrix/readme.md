@@ -78,20 +78,16 @@ op: 10 10 10 10 10 10
 
 ```
 ip:
-
 1 2 3 4
 5 6 7 8
 9 10 11 12
 13 14 15 16
-
 op: 1 2 3 4 8 7 6 5 9 10 11 12 16 15 14 13
 
 ip:
-
 1 2 3 4
 5 6 7 8
 9 10 11 12
-
 op: 1 2 3 4 8 7 6 5 9 10 11 12
 ```
 
@@ -117,3 +113,60 @@ void printSnake(int mat[R][C])
 }
 ```
 
+## Print boundary elements 
+
+```
+ip:
+1 2 3 4
+5 6 7 8
+9 10 11 12
+13 14 15 16
+op: 1 2 3 4 8 12 16 15 14 13 9 5
+
+ip:
+1 2 3 4
+5 6 7 8
+op: 1 2 3 4 8 7 6 5
+
+ip: 1 2 3 4
+op: 1 2 3 4
+
+ip: 
+1
+2
+3
+op: 1 2 3
+```
+
+- Approach: R*C matrix, 
+    - print first row, i = 0 to c-1
+    - print last column, i = 1 to r-1
+    - print last row from r-l, i = c-2 to 0
+    - print first column, i = r-2 to 1
+    - Corner cases: only one row or only one column
+
+- Time: Theta(2R+2C)
+- Code
+
+```
+void borderTraversal(int mat[R][C])
+{
+    if(R == 1)
+        for(int i = 0; i < C; i++)
+            cout << mat[0][i] << " ";
+    else if(C == 1)
+        for(int i = 0; i < R; i++)
+            cout << mat[i][0] << " ";
+    else
+    {
+        for(int i = 0; i < C; i++)
+            cout << mat[0][i] << " ";
+        for(int i = 1; i < R; i++)
+            cout << mat[i][C-1] << " ";
+        for(int i = C-2; i >= 0; i--)
+            cout << mat[R-1][i] << " ";
+        for(int i = R-2; i >= 1; i--)
+            cout << mat[i][0] << " ";
+    }
+}
+```
