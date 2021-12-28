@@ -1,4 +1,4 @@
-## important pts about matrix
+## Important pts about matrix
 
 - elements are stored in row major order
 - internal curly brackets are optional
@@ -11,7 +11,7 @@ int arr[][2][2] = {{{1, 2}, {3, 4}},
 ```
 - from C++14, variable size arrays are allowed
 
-## ways of creating multi-dimensional array
+## Ways of creating multi-dimensional array
 
 1) Double pointer
 
@@ -93,7 +93,7 @@ op: 1 2 3 4 8 7 6 5 9 10 11 12
 
 - Approach: if even row print l-r, else print r-l
 - Time: theta(R*C) 
-- Code 
+- Pseudo Code 
 ```
 void printSnake(int mat[R][C])
 {
@@ -146,7 +146,7 @@ op: 1 2 3
     - Corner cases: only one row or only one column
 
 - Time: Theta(2R+2C)
-- Code
+- Pseudo Code
 
 ```
 void borderTraversal(int mat[R][C])
@@ -168,5 +168,61 @@ void borderTraversal(int mat[R][C])
         for(int i = R-2; i >= 1; i--)
             cout << mat[i][0] << " ";
     }
+}
+```
+
+## Transpose of a square matrix
+
+- here we are actually suppose to change the matrix to it's transpose and not just print transpose
+- transpose: rows become cols and vice-versa
+
+```
+ip:
+1 2 3 4
+5 6 7 8
+9 10 11 12
+13 14 15 16
+op:
+1 5 9 13
+2 6 10 14
+3 7 11 15
+4 8 12 16
+
+ip:
+1 1
+2 2
+op:
+1 2
+1 2
+```
+
+- Approach: move ```mat[i][j] to mat[j][i]```
+- Pseudo Code without inplace using aux array
+```
+void transpose(int mat[n][n])
+{
+    int temp[n][n];
+
+    for(int i = 0; i < n; i++)
+        for(int j = 0; j < n; j++)
+            temp[i][j] = mat[j][i];
+    
+    for(int i = 0; i < n; i++)
+        for(int j = 0; j < n; j++)
+            mat[i][j] = temp[i][j];
+}
+```
+
+- eff solution: one traversal, inplace
+    - diagonal els remain as they are, swap ```mat[i][j] with mat[j][i]```
+
+- Pseudo Code:
+```
+void transpose(int mat[n][n])
+{
+    // traversing upper diag
+    for(int i = 0; i < n; i++)
+        for(int j = i + 1; j < n; j++)
+            swap(mat[i][j], mat[j][i]);
 }
 ```
