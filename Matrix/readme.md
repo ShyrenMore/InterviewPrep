@@ -52,6 +52,8 @@ vector <int> arr[m];
 
 4) Vector of vectors
 
+- advantage: individual rows as well as no of rows are of "dynamic" sizes, easy to pass to function 
+
 ```
 vector<vector<int>>arr;
 
@@ -71,3 +73,47 @@ for(int i = 0; i < arr.size(); i++)
 
 op: 10 10 10 10 10 10
 ```
+
+## Print a matrix in snake pattern 
+
+```
+ip:
+
+1 2 3 4
+5 6 7 8
+9 10 11 12
+13 14 15 16
+
+op: 1 2 3 4 8 7 6 5 9 10 11 12 16 15 14 13
+
+ip:
+
+1 2 3 4
+5 6 7 8
+9 10 11 12
+
+op: 1 2 3 4 8 7 6 5 9 10 11 12
+```
+
+- Approach: if even row print l-r, else print r-l
+- Time: theta(R*C) 
+- Code 
+```
+void printSnake(int mat[R][C])
+{
+    for(int i = 0; i < R; i++)
+    {
+        if(i%2==0)
+        {
+            for(int j = 0; j < C; j++)
+                cout << mat[i][j] <<" ";
+        }
+        else 
+        {
+            for(int j = C-1; j >= 0; j--)
+                cout << mat[i][j] << " ";
+        }
+    }
+}
+```
+
