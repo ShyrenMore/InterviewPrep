@@ -92,7 +92,7 @@ op: 1 2 3 4 8 7 6 5 9 10 11 12
 ```
 
 - Approach: if even row print l-r, else print r-l
-- Time: theta(R*C) 
+- Time: θ(R*C) 
 - Pseudo Code 
 ```
 void printSnake(int mat[R][C])
@@ -145,7 +145,7 @@ op: 1 2 3
     - print first column, i = r-2 to 1
     - Corner cases: only one row or only one column
 
-- Time: Theta(2R+2C)
+- Time: θ(2R+2C)
 - Pseudo Code
 
 ```
@@ -226,3 +226,81 @@ void transpose(int mat[n][n])
             swap(mat[i][j], mat[j][i]);
 }
 ```
+
+## Rotate a matrix by 90 deg anti-clockwise 
+
+```
+ip: 
+1 2 3
+4 5 6
+7 8 9
+op: 
+3 6 9
+2 5 8
+1 4 7
+
+ip: 
+1 2 3 4
+5 6 7 8
+9 10 11 12
+13 14 15 16
+op:
+4 8 12 16
+3 7 11 15
+2 6 10 14
+1 5 9 13
+```
+
+- Approach: 
+    - find transpose 
+    - reverse individual columns by simple array reversal
+
+- eg:
+
+```
+1 2 3 4
+5 6 7 8
+9 10 11 12
+13 14 15 16
+
+after transpose:
+
+1 5 9 13
+2 6 10 14
+3 7 11 15
+4 8 12 16
+
+reverse columns:
+making last row -> first row
+making second-last row -> second row
+
+4 8 12 16
+3 7 11 15
+2 6 10 14
+1 5 9 13
+```
+
+- Pseudo Code
+```
+void rotate90(int mat[n][n])
+{
+    // transpose
+    for(int i = 0; i < n; i++)
+        for(int j = i + 1; j < n; j++)
+            swap(mat[i][j], mat[j][i]);
+    
+    // reversing columns
+    for(int i = 0; i < n; i++)
+    {
+        int low=0, high=n-1;
+        while(low < high)
+        {
+            swap(mat[low][i], mat[high][i]);
+            low++;
+            high--;
+        }
+    }
+}
+```
+
+- Time: θ(n^2)
