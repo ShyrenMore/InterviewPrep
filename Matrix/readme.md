@@ -304,3 +304,96 @@ void rotate90(int mat[n][n])
 ```
 
 - Time: θ(n^2)
+
+## Spiral traversal of matrix
+
+```
+ip:
+1 2 3 4
+5 6 7 8
+9 10 11 12
+13 14 15 16
+op: 1 2 3 4 8 12 16 15 14 13 9 5 6 7 11 10
+
+ip: 
+1 2 3
+4 5 6
+op: 1 2 3 6 5 4
+
+ip: 10 20 30
+op: 10 20 30
+
+ip: 
+10 
+20 
+30
+op: 10 20 30
+```
+
+- approach: we remove outermost layers one by one, we do this by maintaining 4 ptrs
+    - top for top row
+    - right for rightmost col
+    - left for leftmost col
+    - bottom for bottom row
+    <br>
+- print top row, change top to point to next row, 
+- then print rightmost col, change right to second last rightmost col
+- similarly print bottom & change bottom to second-last row
+- print left col, increment left ptr so it points to second column from left
+- repeat the process until top crosses bottom or left crosses right
+- code:
+```
+void printSpiral(int mat[][], int R, int C)
+{
+    int top=0, left=0, bottom=R-1, right=C-1;
+    while(top<=bottom && left<=right)
+    {
+        // top row
+        for(int i = left; i <= right; i++)
+            cout << mat[top][i] << " ";
+        ++top;
+
+        //right col 
+        for(int i = top; i <= bottom; i++)
+            cout << mat[i][right] << " ";
+        --right;
+
+        //bottom row in reverse order 
+        if(top<=bottom)
+        {
+            for(int i = right; i >= left; i--)
+                cout << mat[bottom][i] << " ";
+            --bottom;
+        }
+
+        // left col in reverse order
+        if(left<=right)
+        {
+            for(int i = bottom; i >= top; i--)
+                cout << mat[i][left] << " ";
+            ++left;
+        }
+    }
+}
+```
+
+```
+dry run:
+
+1 2 3 4
+5 6 7 8
+9 10 11 12
+13 14 15 16
+
+initially, top=0, bottom=3, left=0, right=3
+op: 1 2 3 4     top=1
+op: 1 2 3 4 8 12 16    right=2
+op: 1 2 3 4 8 12 16 15 14 13   bottom=2
+op: 1 2 3 4 8 12 16 15 14 13 9 5    left=1
+op: 1 2 3 4 8 12 16 15 14 13 9 5 6 7    top=2
+op: 1 2 3 4 8 12 16 15 14 13 9 5 6 7 11     right=1
+op: 1 2 3 4 8 12 16 15 14 13 9 5 6 7 11 10      bottom=1
+
+```
+
+- Time: printing every cell: θ(R*C)
