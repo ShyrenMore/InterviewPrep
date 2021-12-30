@@ -397,3 +397,80 @@ op: 1 2 3 4 8 12 16 15 14 13 9 5 6 7 11 10      bottom=1
 ```
 
 - Time: printing every cell: θ(R*C)
+
+## Search in a row-wise & column-wise sorted matrix
+
+- Given a matrix which is row-wise sorted & col-wise sorted and value x, if x is present print it's position 
+
+```
+ip:
+mat[][] = {{10, 20, 30, 40},
+           {15, 25, 35, 45}, 
+           {27, 29, 37, 48},
+           {32, 33, 39, 50}}
+x=29
+op: found at (2, 1)
+
+ip:
+mat[][] = {{10, 20}, 
+           {12, 30}}
+x=15
+op: not found
+```
+
+- approach:  O(R+C)
+- begin from top right corner, traverse the matrix
+- while traversing cmp x with curr_el
+    - if x is same, print position and return
+    - if x is smaller, move left
+    - if x is greater, move down
+- DAMMMMNNNN, noice approach
+
+```
+void search(int mat[R][C], int x)
+{
+    int i = 0, j = C-1;
+    while(i<R && j>=0)
+    {
+        if(mat[i][j]==x)
+        {
+            cout<<"Found at ( " << i << j << " )";
+            return;
+        }
+        else if(mat[i][j]>x)
+            --j;
+        else 
+            ++i;
+    }
+
+    cout<<"Not found";
+}
+```
+
+## Median of a row-wise sorted matrix
+
+- given an odd sized matrix containing distinct elements and every row is sorted in increasing order, find median of matrix
+
+```
+ip: 
+1 10 20
+15 25 35
+5 30 40
+op: 20  
+exp: 1, 5, 10, 15, 20, 25, 30, 35, 40, total_el=9, 5th el is median
+
+ip:
+2   4   6   8   10
+1   3   5   7   9
+100 200 400 500 800
+op: 8   // 1, 2, 3, 5, 6, 7, 8, 9, 10, 100, 200, 400, 500, 800
+```
+
+- Naive solution:
+1) Put all el in array and sort it
+2) return middle element 
+3) Time: ```O(r*c*log(r*c))```
+
+- efficient solution
+1) find min and max el from matrix
+Time: ```O(r*log(max-min)*logc)```
