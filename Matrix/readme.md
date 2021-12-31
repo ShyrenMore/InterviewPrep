@@ -472,5 +472,92 @@ op: 8   // 1, 2, 3, 5, 6, 7, 8, 9, 10, 100, 200, 400, 500, 800
 3) Time: ```O(r*c*log(r*c))```
 
 - efficient solution
+```
 1) find min and max el from matrix
+minimum element will be from the first column
+maximum element will be from the second column
+
+2) find position of median el, (r*c+1)/2
+i.e there will be (r*c+1)/2 elements smaller than or equal the median
+
+3) do binary search in range [min, max]
+upper_bound() function gives you idx(iterator) of first greater element
+we don't update max=mid-1 in else, instead we do max=mid 
+
 Time: ```O(r*log(max-min)*logc)```
+
+```
+
+- Code
+
+```
+int matMed(int mat[][MAX], int r, int c)
+{
+    int min = mat[0][0], max = mat[0][c-1];
+    for(int i = 1; i<r; i++)
+    {
+        if(mat[i][0]<min)
+            min = mat[i][0];
+        if(mat[i][c-1]>max)
+            max = mat[i][c-1];
+    }
+
+    int medPos = (r*c+1)/2;
+    while(min<max)
+    {
+        int mid = (min+max)/2;
+        int midPos = 0;
+
+        for(int i = 0; i < r; i++)
+            midPos += upper_bound(mat[i], mat[i]+c, mid) - mat[i];
+        
+        if(midPos < medPos) 
+            min = mid + 1;
+        else 
+            max = mid;
+    }
+    return min;
+}
+
+```
+
+- dry run
+
+```
+mat = 
+5  10 20 30 40
+1  2  3  4  6
+11 13 15 17 19
+
+actual ans should be 11 i.e 8th el(1, 2, 3, 4, 5, 6, 10, 11, 13, 15, 17, 19, 20, 30, 40)
+
+r=3, c=5
+min=1, max=40
+medPos =  (3*5+1)/2 = 8
+
+binary search begins 
+min=1, max=40
+mid=20, midPos = 3+5+5 = 13
+
+min=1, max=20
+mid=10
+midPos = 2+5+0 = 7
+
+min=11, max=20
+mid=15
+midPos=2+5+3=10
+
+min=11, max=15
+mid=13
+midPos=2+5+2=9
+
+min=11, max=13
+mid=12
+midPos=2+5+1=8
+
+min=11, max=12
+mid=11
+midPos=2+5+1=8
+
+min=11, max=11
+```
