@@ -51,6 +51,7 @@ public class delete_last_node {
 }
 
 /**
+ * Time: O(n)
  * op
  * 10 20 30
  * 10 20

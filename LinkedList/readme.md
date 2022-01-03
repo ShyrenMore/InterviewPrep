@@ -8,12 +8,14 @@
 - Implementation of round robin scheduling is much less complex and cost-friendly with circular LL rather than arrays, since we will need to re-size our list of processes and also perform insertion at the end of list
 - basically any problem where insertion at middle/end is performed more no of times, LL is better suited for them
 
-## Questions on LL
+## Questions on Singly LL
 
-- [Linked List implementation](1_LL_basic.cpp)
+- [Linked List implementation](Singly_Linked_List/LL_basic)
     - Why do LL have self-referential struct? <br>
         every node needs to have addr of next node, and datatype of next node is same as the current node
-- [LL Traversal](2_LL_traversal.cpp)
-- [Insert at beginning of Singly LL](insert_at_begin.java)
-- [Insert at end of Singly LL](insert_at_end.java)
-- [Delete first node in Singly LL](delete_first_node.java)
+- [LL Traversal](Singly_Linked_List/LL_traversal)
+- [Insert at beginning of Singly LL](Singly_Linked_List/insert_at_begin.java)
+- [Insert at end (tail) of Singly LL](Singly_Linked_List/insert_at_end.java)
+- [Delete first node(head) in Singly LL](Singly_Linked_List/delete_first_node.java)
+- [Delete last node(tail) in Singly LL](Singly_Linked_List/delete_last_node.java)
+- [Insert at given position in Singly LL](Singly_Linked_List/insert_node.java)
