@@ -317,3 +317,5 @@ void quickSort(int arr[], int l, int h)
     </p>
 
 - [Minimum difference in an array](11_min_diff.cpp)
+- [Merge overlapping intervals](12_merge_intervals.cpp)
+- [Meeting maximum guests](13_max_guests.cpp)
