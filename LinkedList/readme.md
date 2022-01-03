@@ -14,3 +14,6 @@
     - Why do LL have self-referential struct? <br>
         every node needs to have addr of next node, and datatype of next node is same as the current node
 - [LL Traversal](2_LL_traversal.cpp)
+- [Insert at beginning of Singly LL](insert_at_begin.java)
+- [Insert at end of Singly LL](insert_at_end.java)
+- [Delete first node in Singly LL](delete_first_node.java)
