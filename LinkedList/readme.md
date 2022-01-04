@@ -19,3 +19,5 @@
 - [Delete first node(head) in Singly LL](Singly_Linked_List/delete_first_node.java)
 - [Delete last node(tail) in Singly LL](Singly_Linked_List/delete_last_node.java)
 - [Insert at given position in Singly LL](Singly_Linked_List/insert_node.java)
+- [Search in a LL(iterative & recursive)](Singly_Linked_List/SearchNode.java)
+    - we can't do binary search in logn time on LL, since we can't find middle node in O(1) time
