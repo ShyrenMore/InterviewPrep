@@ -15,6 +15,10 @@ public class InsertAtTail {
 
     public static Node insertTail(Node head, int data) {
         Node newNode = new Node(data);
+        
+        if(head==null)
+            return newNode;
+
         Node curr = head;
 
         while (curr.next != null)

@@ -21,3 +21,39 @@
 - [Insert at given position in Singly LL](Singly_Linked_List/insert_node.java)
 - [Search in a LL(iterative & recursive)](Singly_Linked_List/SearchNode.java)
     - we can't do binary search in logn time on LL, since we can't find middle node in O(1) time
+
+## Doubly LL
+
+- in doubly LL, we have ref to prev and next node 
+- in struct/class node, a new attr will be added
+
+```
+class Node{
+    int data;
+    Node prev;
+    Node next;
+
+    Node(int d){
+        data = d;
+
+        // optional lines
+        prev = null;
+        next = null;
+    }
+}
+```
+
+- [Doubly Linked List implementation](Doubly_Linked_List/LL_basic.java)
+
+## Advantages of Doubly LL over Singly LL:
+- can be traversed in both directions
+- delete a node in O(1) time with given ref/ptr to it
+- insert/delete *before* a given node
+- insert/delete from both ends in O(1) time by maintaining tail
+
+## Disadvantages of Doubly LL over Singly LL:
+- Extra space for prev
+- Code becomes more complex
+
+- [Insert at head of DLL](Doubly_Linked_List/InsertAtHead.java)
+- [Insert at tail of DLL](Doubly_Linked_List/InsertAtTail.java)
