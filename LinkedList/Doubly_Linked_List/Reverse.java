@@ -51,6 +51,7 @@ public class Reverse {
     
     public static void printList(Node head) {
         Node tempNode = head;
+        System.out.print("null<-");
         while (tempNode != null) {
             System.out.print(tempNode.data + "<=>");
             tempNode = tempNode.next;

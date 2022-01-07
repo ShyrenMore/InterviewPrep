@@ -45,16 +45,21 @@ class Node{
 
 - [Doubly Linked List implementation](Doubly_Linked_List/LL_basic.java)
 
-## Advantages of Doubly LL over Singly LL:
+### Advantages of Doubly LL over Singly LL:
 - can be traversed in both directions
 - delete a node in O(1) time with given ref/ptr to it
 - insert/delete *before* a given node
 - insert/delete from both ends in O(1) time by maintaining tail
 
-## Disadvantages of Doubly LL over Singly LL:
+### Disadvantages of Doubly LL over Singly LL:
 - Extra space for prev
 - Code becomes more complex
+
+### Problems on DLL
 
 - [Insert at head of DLL](Doubly_Linked_List/InsertAtHead.java)
 - [Insert at tail of DLL](Doubly_Linked_List/InsertAtTail.java)
 - [Reverse a DLL](Doubly_Linked_List/Reverse.java)
+    - find dry run img [here](imgs/)
+- [Delete head of DLL](Doubly_Linked_List/DeleteHead.java)
+- [Delete tail of DLL](Doubly_Linked_List/DeleteTail.java)
