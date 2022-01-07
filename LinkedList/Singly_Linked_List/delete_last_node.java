@@ -31,7 +31,7 @@ public class delete_last_node {
             return head;
         
         if (head.next == null)
-            return head;
+            return null;
         
         Node currNode = head;
         while(currNode.next.next != null)
