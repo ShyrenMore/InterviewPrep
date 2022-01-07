@@ -57,3 +57,4 @@ class Node{
 
 - [Insert at head of DLL](Doubly_Linked_List/InsertAtHead.java)
 - [Insert at tail of DLL](Doubly_Linked_List/InsertAtTail.java)
+- [Reverse a DLL](Doubly_Linked_List/Reverse.java)
