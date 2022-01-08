@@ -84,3 +84,12 @@ hence we need to efficiently delete, traverse in circular manner, update the dat
 
 ### Disadvantages of Circular LL
 - Implementations of operations become complex
+
+### Problems on CLL
+
+- [Insert at head of CLL](Circular_Linked_List/InsertAtHead.java)
+- [Insert at tail of DLL](Circular_Linked_List/InsertAtTail.java)
+- [Reverse a DLL](Circular_Linked_List/Reverse.java)
+    - find dry run img [here](imgs/)
+- [Delete head of DLL](Circular_Linked_List/DeleteHead.java)
+- [Delete tail of DLL](Circular_Linked_List/DeleteTail.java)
