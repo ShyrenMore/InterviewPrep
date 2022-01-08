@@ -63,3 +63,24 @@ class Node{
     - find dry run img [here](imgs/)
 - [Delete head of DLL](Doubly_Linked_List/DeleteHead.java)
 - [Delete tail of DLL](Doubly_Linked_List/DeleteTail.java)
+
+## Circular LL
+
+- in circular LL, next of last node is not null, it is head of the linked list
+- struct of singular circular LL is same as of singly LL
+
+- [Circular Linked List implementation](Circular_Linked_List/LL_basic.java)
+- [CLL Traversal](Circular_Linked_List/LL_traversal.java)
+
+### Advantages of Circular LL
+-  we can traverse the whole list from any node
+-  implementation of algorithm like round robin algo is much easier
+```
+Round Robin is CPU scheduling algo that we study in OS
+In this algo, we maintain a queue of the proccesses, we traverse through this queue in circular manner, when a process finishes exec, it has to be removed from queue
+hence we need to efficiently delete, traverse in circular manner, update the data
+```
+- We can insert at beginning and end by just maintaining one tail ref/ptr (useful for implementation of queue)
+
+### Disadvantages of Circular LL
+- Implementations of operations become complex
