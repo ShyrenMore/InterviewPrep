@@ -91,3 +91,34 @@ hence we need to efficiently delete, traverse in circular manner, update the dat
 - [Insert at tail of CLL](Circular_Linked_List/InsertAtTail.java)
 - [Delete head of CLL](Circular_Linked_List/DeleteHead.java)
 - [Delete Kth node of CLL](Circular_Linked_List/DeleteKthNode.java)
+
+## Circular Doubly LL
+
+- in circular doubly linked list every node has two pointers or refs like normal doubly linked list
+- In normal doubly LL, prev of first node is null, and next of last node is also null, but in Circular Doubly LL prev of last node is first node and next of last node points to head
+
+### Advantages of CDLL
+- we can access last node in constant time without maintaining extra tail ptr/ref
+- similarly we have features of DLL, eg: you can delete or insert a node before a given node in constant time
+
+### Inserting a node at head for CDLL
+
+```
+Node temp = new Node(x)
+if(head == null)
+{
+    temp.next = temp;
+    temp.prev = temp;
+    return temp;
+}
+
+temp.prev = head.prev;
+temp.next = head;
+
+head.prev.next = temp;
+head.prev = temp;
+
+return temp;
+```
+
+for inserting at tail, it will be same, you just have to return original head ref at the EOF
