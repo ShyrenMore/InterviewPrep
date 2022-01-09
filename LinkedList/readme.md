@@ -90,4 +90,4 @@ hence we need to efficiently delete, traverse in circular manner, update the dat
 - [Insert at head of CLL](Circular_Linked_List/InsertAtHead.java)
 - [Insert at tail of CLL](Circular_Linked_List/InsertAtTail.java)
 - [Delete head of CLL](Circular_Linked_List/DeleteHead.java)
-- [Delete tail of CLL](Circular_Linked_List/DeleteTail.java)
+- [Delete Kth node of CLL](Circular_Linked_List/DeleteKthNode.java)
