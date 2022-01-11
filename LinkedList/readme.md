@@ -122,3 +122,7 @@ return temp;
 ```
 
 for inserting at tail, it will be same, you just have to return original head ref at the EOF
+
+## Misc Questions
+
+- [Insert an item in a sorted SLL such that it remains sorted](sorted_insert_SLL.java)
