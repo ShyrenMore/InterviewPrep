@@ -126,3 +126,5 @@ for inserting at tail, it will be same, you just have to return original head re
 ## Misc Questions
 
 - [Insert an item in a sorted SLL such that it remains sorted](sorted_insert_SLL.java)
+- [Find middle el of LL](middle_el.java)
+- [Reverse SLL iteratively](reverseSLL.java)

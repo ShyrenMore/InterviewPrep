@@ -16,15 +16,22 @@ import java.util.Scanner;
  * ip: null, x= 10
  * op: 10
  * 
- * we traverse the list, for traversing let's have a node called curr, it will initially point to first node 
+ * we traverse the list, for traversing let's have a node called curr, it will
+ * initially point to first node
  * we will compare curr's next data item with x
  * if(curr.next < x)
- *  move to next node
+ * move to next node
  * if(curr.next > x)
- *  insert a node after curr
+ * insert a node after curr
  * 
- * newNode.next = curr.next 
+ * newNode.next = curr.next
  * curr.next = newNode
+ * 
+ * Time: depends on position where we are inserting
+ * if x is smaller than head's data it's O(1)
+ * but if x is greater than tail's data it's θ(n)
+ * 
+ * in general, if we inserting in position 'pos', time is θ(pos)
  */
 
 class Node {
