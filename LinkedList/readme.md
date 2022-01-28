@@ -132,3 +132,8 @@ for inserting at tail, it will be same, you just have to return original head re
 - [Remove duplicates from a sorted Singly Linked List](removeDupliInSortedLL.java)
 - [I left something]()
 - [Detect loop, huge no of tradeoffs](detectloop.java)
+- [Detect loop using Floyd's Cycle Detection, works in O(n) time, O(1) space, no need to modify LL or it's struct, two ptrs method](floydCycleDetection.java)
+    - [Dry run]
+
+- [Detect and Remove loop in SLL](detectandremove.java)
+    - [Dry run]
