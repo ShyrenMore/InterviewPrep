@@ -141,3 +141,5 @@ for inserting at tail, it will be same, you just have to return original head re
     - **[Dry run]**
 
 - [Delete a node with only ptr given to it](randomDelete.java)
+- [Segregate Even & Odd nodes for SLL](segregateEvenOdd.java)
+- [Intersection point of two LL, code TBD](intersectionPoint.java)
