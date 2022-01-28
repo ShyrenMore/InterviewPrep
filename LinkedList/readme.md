@@ -128,9 +128,13 @@ for inserting at tail, it will be same, you just have to return original head re
 - [Insert an item in a sorted SLL such that it remains sorted](sorted_insert_SLL.java)
 - [Find middle el of LL](middle_el.java)
 - [Reverse SLL iteratively](reverseSLL.java)
-- [Reverse SLL recursively TBD](reverseSLL_recursive.java)
+- [Reverse SLL recursively](reverseSLL_recursive.java)
+    - [dry run]
+
 - [Remove duplicates from a sorted Singly Linked List](removeDupliInSortedLL.java)
-- [I left something]()
+
+- [Reverse a LL in groups of size k](reverseInSize.java)
+
 - [Detect loop, huge no of tradeoffs](detectloop.java)
 - [Detect loop using Floyd's Cycle Detection, works in O(n) time, O(1) space, no need to modify LL or it's struct, two ptrs method](floydCycleDetection.java)
     - [Dry run]
@@ -143,3 +147,4 @@ for inserting at tail, it will be same, you just have to return original head re
 - [Delete a node with only ptr given to it](randomDelete.java)
 - [Segregate Even & Odd nodes for SLL](segregateEvenOdd.java)
 - [Intersection point of two LL, code TBD](intersectionPoint.java)
+- [Pairwise swap nodes of a LL](pairwiseSwapNodes.java)
