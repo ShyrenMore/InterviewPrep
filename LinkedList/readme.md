@@ -136,4 +136,8 @@ for inserting at tail, it will be same, you just have to return original head re
     - [Dry run]
 
 - [Detect and Remove loop in SLL](detectandremove.java)
-    - [Dry run]
+    - Find length of loop: Once we detect the loop, i.e when slowptr == fastptr, move any one ptr in reverse direction until they become equal again, while maintaining a count 
+    - Find first node of loop
+    - **[Dry run]**
+
+- [Delete a node with only ptr given to it](randomDelete.java)
