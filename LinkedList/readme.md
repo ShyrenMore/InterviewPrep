@@ -148,3 +148,52 @@ for inserting at tail, it will be same, you just have to return original head re
 - [Segregate Even & Odd nodes for SLL](segregateEvenOdd.java)
 - [Intersection point of two LL, code TBD](intersectionPoint.java)
 - [Pairwise swap nodes of a LL](pairwiseSwapNodes.java)
+- [Clone a LL using a random pointer](cloneLL.java)
+    - **input**
+
+### LRU Cache
+- Cache is a memory viz close to CPU has very less access time i.e very fast small in size compared RAM    
+- LRU(Least recently used) technique helps us to utilise the fast read/write of cache efficiently 
+
+- in LRU we keep the recently accessed item in cache & remove least recently used items when we need space in small sized memory 
+
+- Given a capacity, Design a data structure such that when you refer a item, if it's already present in data structure, mark it as most recently used, 
+and if it's not present, we insert it and mark it as most recenly used
+else if cache is full, remove least recently used item
+and insert it and mark it as most recently used 
+
+- Naive Approach: 
+If we use an array
+Hit: O(n) 
+Miss: O(n)
+where n is capacity if cache 
+
+- Eff approach:
+we need a DS which tells us 
+1) Whether an item is present or not
+2) Insertion <br>
+so hashtable will be great for this usecase 
+but how do we maintain an order for recency?
+for that purpose we use doubly linked list i.e maintaining recency order <br>
+
+In hashtable we store (data, ref in list) as key-value pair <br>
+
+We are storing this ref, since in case it's a hit, we want to bring that node as head of DLL
+in case it's a miss, we create a new node, and that will be new head of DLL
+
+- pseudo algo
+
+```
+Refer(x)
+{
+    Look for x in HT
+    a) if found(Hit), find reference of node in DLL. Move the node to front of DLL
+    b) if not found(Miss)
+        i) insert a new node at the front of DLL
+        ii) insert an entry into HT 
+}
+```
+
+Time: <br>
+Hit: O(1) <br>
+Miss: O(1) <br>
