@@ -128,8 +128,17 @@ for inserting at tail, it will be same, you just have to return original head re
 - [Insert an item in a sorted SLL such that it remains sorted](sorted_insert_SLL.java)
 - [Find middle el of LL](middle_el.java)
 - [Reverse SLL iteratively](reverseSLL.java)
+    - dry run
+<p align="center">
+  <img src="imgs/reverse_list_itr.jpg" width="380px" alt="sort" title="sort"/>
+</p>
+
 - [Reverse SLL recursively](reverseSLL_recursive.java)
-    - [dry run]
+    - dry run
+<p align="center">
+  <img src="imgs/reverse_list_recursive.jpg" width="380px" alt="sort" title="sort"/>
+</p>
+
 
 - [Remove duplicates from a sorted Singly Linked List](removeDupliInSortedLL.java)
 
@@ -137,12 +146,14 @@ for inserting at tail, it will be same, you just have to return original head re
 
 - [Detect loop, huge no of tradeoffs](detectloop.java)
 - [Detect loop using Floyd's Cycle Detection, works in O(n) time, O(1) space, no need to modify LL or it's struct, two ptrs method](floydCycleDetection.java)
-    - [Dry run]
-
 - [Detect and Remove loop in SLL](detectandremove.java)
     - Find length of loop: Once we detect the loop, i.e when slowptr == fastptr, move any one ptr in reverse direction until they become equal again, while maintaining a count 
     - Find first node of loop
-    - **[Dry run]**
+    - dry run
+    <p align="center">
+    <img src="imgs/cycle_detection_and_removal.jpg" width="480px" alt="sort" title="sort"/>
+    </p>
+
 
 - [Delete a node with only ptr given to it](randomDelete.java)
 - [Segregate Even & Odd nodes for SLL](segregateEvenOdd.java)
