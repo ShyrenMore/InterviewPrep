@@ -197,3 +197,7 @@ Refer(x)
 Time: <br>
 Hit: O(1) <br>
 Miss: O(1) <br>
+
+<p align="center">
+  <img src="imgs/LRU_cache_design_1.jpg" width="680px" alt="sort" title="sort"/>
+</p>
