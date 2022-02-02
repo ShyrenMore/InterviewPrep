@@ -142,6 +142,8 @@ for inserting at tail, it will be same, you just have to return original head re
 
 - [Remove duplicates from a sorted Singly Linked List](removeDupliInSortedLL.java)
 
+- [Find nth Node from end of Linked List](nthNodefromEnd.java)
+
 - [Reverse a LL in groups of size k](reverseInSize.java)
 
 - [Detect loop, huge no of tradeoffs](detectloop.java)
@@ -212,3 +214,4 @@ Miss: O(1) <br>
 <p align="center">
   <img src="imgs/LRU_cache_design_1.jpg" width="680px" alt="sort" title="sort"/>
 </p>
+
