@@ -18,3 +18,4 @@
 ## Implementation
 
 - [Array implementation of stack](array_stack.cpp)
+- [Linked List implementation of stack](ll_stack.cpp)
