@@ -17,12 +17,23 @@ class MyStack
 
         void push(int x)
         {
+            if(top == cap-1)
+            {
+                cout << "\nOverflow: You are pushing in a full stack";
+                return;
+            }
             ++top;
             arr[top] = x;
         }
 
         int pop()
         {
+            if(top==-1)
+            {
+                cout << "\nUnderflow: you are popping from an empty stack";
+                return INT8_MIN;
+            }
+
             int res = arr[top];
             --top;
             return res;
@@ -30,6 +41,11 @@ class MyStack
 
         int peek()
         {
+            if (top == -1)
+            {
+                cout << "\nUnderflow: you are popping from an empty stack";
+                return INT8_MIN;
+            }
             return arr[top];
         }
 
@@ -56,10 +72,13 @@ int main()
 {
     // creating a stack of size 5
     MyStack *sq = new MyStack(5);
-
+    cout<<sq->pop();
     sq->push(5);
     sq->push(10);
     sq->push(20);
+    sq->push(40);
+    sq->push(50);
+    sq->push(60);
     sq->printStack();
     cout << "\n";
 }
