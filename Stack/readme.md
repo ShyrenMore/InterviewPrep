@@ -35,3 +35,7 @@
     - since stack follows LIFO, whatever was done last, has to be undone 
     - and whatever was undone last has to be re-do
 - forward/backward in web-browsers
+
+## Problems on Stack DS
+
+- [Implement two stacks in an array](two_stacks.cpp)
