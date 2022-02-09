@@ -87,3 +87,5 @@ Update ith el: O(1)
 - [Remove duplicates from a sorted array](remove_duplicates.cpp)
 - [Move all zeroes to end](move_zeroes.cpp)
 - [Left rotate an array by d steps](left_rotate.cpp)
+- [Leaders in an array](leaders.cpp)
+    - print els that have nothing greater to the right of it
