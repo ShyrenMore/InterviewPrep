@@ -40,3 +40,8 @@
 
 - [Implement two stacks in an array](two_stacks.cpp)
 - [Infix to Postfix conversion](infix_to_postfix.cpp)
+
+## Design questions on stack
+
+- [Design a stack that supports getMin() in O(n) space](getMin_1.cpp)
+    - dry run
