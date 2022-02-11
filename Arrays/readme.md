@@ -89,3 +89,5 @@ Update ith el: O(1)
 - [Left rotate an array by d steps](left_rotate.cpp)
 - [Leaders in an array](leaders.cpp)
     - print els that have nothing greater to the right of it
+- [Maximum diff](max_diff.cpp)
+    - max diff of ```arr[j]-arr[i]``` such that ```j>i```
