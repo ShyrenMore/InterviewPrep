@@ -57,6 +57,7 @@ void printFreq(int arr[], int n)
         freq = 1;
     }
 
+    // if last two el are different
     if (n == 1 || arr[n - 1] != arr[n - 2])
         cout << arr[n - 1] << " 1";
 }

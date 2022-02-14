@@ -91,3 +91,7 @@ Update ith el: O(1)
     - print els that have nothing greater to the right of it
 - [Maximum diff](max_diff.cpp)
     - max diff of ```arr[j]-arr[i]``` such that ```j>i```
+- [Frequencies in a sorted array](freq.cpp)
+- [Stock buy and sell](stock_buy_and_sell.cpp)
+    - dry run
+    - ![](imgs/stock.jpg)
