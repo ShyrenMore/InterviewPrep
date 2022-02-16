@@ -3,8 +3,8 @@
 - eg of queue:
     - pipe in a supply chain
     - any line for say train pass
-- dequeue(removal) happens at front and 
-- enqueue(addition) happens at rear end
+- **dequeue(removal) happens at front and**
+- **enqueue(addition) happens at rear end**
 - operations
     - enqueue(x)
     - dequeue()
@@ -33,3 +33,22 @@
 - Hence Queue finds it applications in mainly two situations:
     - when a single resource will be consumed by multiple consumers and these comsumers will be served in FCFS manner
     - synchronize slow and fast device
+
+- [implementation of Queue using array](queue_array.cpp)
+
+- [queue in C++ stl](queue_stl.cpp)
+    - in STL enqueue/dequeue is push/pop
+    - all operations have O(1) time
+    - Queue can be implemented on any underlying container that provides the foll functions
+        
+        - 
+        ```
+        empty()
+        size()
+        front()
+        back()
+        push_back()
+        pop_front()
+        ```
+    - these containers are ``` list or dequeue, by defualt dequeue  ```
+    - hence queue is container adapter
