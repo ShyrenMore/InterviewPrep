@@ -34,7 +34,26 @@
     - when a single resource will be consumed by multiple consumers and these comsumers will be served in FCFS manner
     - synchronize slow and fast device
 
-- [implementation of Queue using array](queue_array.cpp)
+- [implementation of Queue using array (Naive)](queue_array_naive.cpp)
+    - front is always at idx 0 and rear=size-1
+    - does dequeue in O(n) time
+
+- [implementation of Queue using array (Efficient)](queue_array_efficient.cpp)
+    - uses circular array, all operations will be O(1)
+    - 
+    ```
+    enqueue(): front = (front + 1)%cap;
+               size--;
+    dequeue(): rear = (front + size - 1)%cap;
+               rear = (rear + 1)%cap;
+               arr[rear] = x;
+               size++; 
+    ```
+    - dry run for all operations
+    <p align="center">
+    <img src="imgs/queue_array.jpg" width="380px" alt="shyren" title="shyren"/>
+    </p>
+
 
 - [queue in C++ stl](queue_stl.cpp)
     - in STL enqueue/dequeue is push/pop
