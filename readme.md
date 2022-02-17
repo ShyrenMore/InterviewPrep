@@ -1,3 +1,14 @@
+### A new visitor?
+you can refer to
+- [LinkedList](LinkedList/)
+- [Matrix](Matrix/)
+- [Sorting](Sorting/)
+
+### What is this repo about?
+- Interview prep 
+
+### Some resources and hacks 
+
 - Cheatsheet for time and space complexity:
 https://www.bigocheatsheet.com/
 
@@ -46,3 +57,8 @@ Else
     - Sort input for O(nlogn) time and O(1) space
 
 ```
+
+
+### Stargazers over time
+
+[![Stargazers over time](https://starchart.cc/ShyrenMore/BasicDSA.svg)](https://starchart.cc/ShyrenMore/BasicDSA)
