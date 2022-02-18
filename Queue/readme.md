@@ -34,11 +34,11 @@
     - when a single resource will be consumed by multiple consumers and these comsumers will be served in FCFS manner
     - synchronize slow and fast device
 
-- [implementation of Queue using array (Naive)](queue_array_naive.cpp)
+- [Implementation of Queue using array (Naive)](queue_array_naive.cpp)
     - front is always at idx 0 and rear=size-1
     - does dequeue in O(n) time
 
-- [implementation of Queue using array (Efficient)](queue_array_efficient.cpp)
+- [Implementation of Queue using array (Efficient)](queue_array_efficient.cpp)
     - uses circular array, all operations will be O(1)
     - 
     ```
@@ -54,6 +54,7 @@
     <img src="imgs/queue_array.jpg" width="380px" alt="shyren" title="shyren"/>
     </p>
 
+- [Implementation of Queue using Linked List](queue_ll.cpp)
 
 - [queue in C++ stl](queue_stl.cpp)
     - in STL enqueue/dequeue is push/pop
