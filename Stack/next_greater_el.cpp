@@ -44,6 +44,8 @@ otherwise ans is top of stack
 we push the current element in the stack for next iteration
 
 we need to print the entire output in reverse order 
+Time: O(2n) 
+Space: O(n)
 */
 
 void nextGreater_naive(int arr[], int n)
