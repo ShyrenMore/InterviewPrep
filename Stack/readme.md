@@ -39,7 +39,15 @@
 ## Problems on Stack DS
 
 - [Implement two stacks in an array](two_stacks.cpp)
+- [Kstacks in an array]
+    - damn idk, I didn't understand
+
+- [Previous Greater Element](prev_greater_el.cpp)
+- [Next Greater Element](next_greater_el.cpp)
 - [Infix to Postfix conversion](infix_to_postfix.cpp)
+- [Evaluation of Postfix expression](postfix.cpp)
+    - dry run
+- [Stock span problem](stock_span.cpp)
 
 ## Design questions on stack
 
