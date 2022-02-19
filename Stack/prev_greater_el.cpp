@@ -30,7 +30,7 @@ initialise an empty stack and push first item
 print -1, since prev greater of first el will always be -1
 
 we traverse array from left to right from index 1
-we keep removing the smaller elements if they are present in stack
+we keep popping the smaller elements if they are present in stack
 so whatever is remaining at top will be either
 1) first prev greater element
 2) stack will be empty

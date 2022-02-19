@@ -43,6 +43,8 @@
     - damn idk, I didn't understand
 
 - [Previous Greater Element](prev_greater_el.cpp)
+    - dry run image
+    
 - [Next Greater Element](next_greater_el.cpp)
 - [Infix to Postfix conversion](infix_to_postfix.cpp)
 - [Evaluation of Postfix expression](postfix.cpp)
