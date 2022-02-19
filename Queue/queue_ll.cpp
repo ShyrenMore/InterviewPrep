@@ -34,16 +34,18 @@ class Queue
 {
     public:
         Node *front, *rear;
+        // int size;
         Queue()
         {
             front = NULL;
             rear = NULL;
+            // size = 0;
         }
 
         void enqueue(int x)
         {
             Node *temp = new Node(x);
-
+            // ++size
             // corner case: addn to empty list
             if(front == NULL)
             {
@@ -59,6 +61,7 @@ class Queue
         {
             if(front == NULL)
                 return;
+            // --size
             Node *temp = front;
             front = front->next;
 
