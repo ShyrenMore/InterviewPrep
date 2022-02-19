@@ -44,12 +44,25 @@
 
 - [Previous Greater Element](prev_greater_el.cpp)
     - dry run image
-    
+
+<p align="center">
+<img src="imgs/prev_greater_el.jpg" width="780px" alt="sort" title="sort"/>
+</p>
+
+
 - [Next Greater Element](next_greater_el.cpp)
+    - dry run image 
+
+<p align="center">
+<img src="imgs/next_greater_el.jpg" width="780px" alt="sort" title="sort"/>
+</p>
+
+
+- [Stock span problem](stock_span.cpp)
+
 - [Infix to Postfix conversion](infix_to_postfix.cpp)
 - [Evaluation of Postfix expression](postfix.cpp)
     - dry run
-- [Stock span problem](stock_span.cpp)
 
 ## Design questions on stack
 
