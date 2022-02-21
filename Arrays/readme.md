@@ -95,3 +95,5 @@ Update ith el: O(1)
 - [Stock buy and sell](stock_buy_and_sell.cpp)
     - dry run
     - ![](imgs/stock.jpg)
+- [Trapping Rainwater TBD]()
+- [Maximum consecutive ones](max_consecutive_ones.cpp)
