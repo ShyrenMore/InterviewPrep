@@ -60,6 +60,8 @@
 
 - [Stock span problem](stock_span.cpp)
 
+- [Largest Rectangular Area in a Histogram](histogram.cpp)
+
 - [Infix to Postfix conversion](infix_to_postfix.cpp)
 - [Evaluation of Postfix expression](postfix.cpp)
     - dry run
