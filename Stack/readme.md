@@ -64,7 +64,6 @@
 
 - [Infix to Postfix conversion](infix_to_postfix.cpp)
 - [Evaluation of Postfix expression](postfix.cpp)
-    - dry run
 
 ## Design questions on stack
 

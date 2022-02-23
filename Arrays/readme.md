@@ -97,3 +97,5 @@ Update ith el: O(1)
     - ![](imgs/stock.jpg)
 - [Trapping Rainwater TBD]()
 - [Maximum consecutive ones](max_consecutive_ones.cpp)
+- [Maximum Sum Subarray](maxsum_subarr.cpp)
+    - dry run
