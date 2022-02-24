@@ -99,3 +99,4 @@ Update ith el: O(1)
 - [Maximum consecutive ones](max_consecutive_ones.cpp)
 - [Maximum Sum Subarray](maxsum_subarr.cpp)
     - dry run
+- [Maximum length even-odd subarray](maxlen_subarr.cpp)
