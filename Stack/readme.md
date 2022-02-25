@@ -61,6 +61,7 @@
 - [Stock span problem](stock_span.cpp)
 
 - [Largest Rectangular Area in a Histogram](histogram.cpp)
+    - dry run
 
 - [Infix to Postfix conversion](infix_to_postfix.cpp)
 - [Evaluation of Postfix expression](postfix.cpp)
@@ -69,3 +70,8 @@
 
 - [Design a stack that supports getMin() in O(n) space](getMin_1.cpp)
     - dry run
+
+## Intuition for stack problems
+- Usually used for optimising your O(N^2) idea
+- when you need to play with greater/smaller indices
+- keeping a track of certain kind (next greater/prev greater) of elements
