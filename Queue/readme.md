@@ -72,3 +72,11 @@
         ```
     - these containers are ``` list or dequeue, by defualt dequeue  ```
     - hence queue is container adapter
+
+- [Implement stack using queue](stack_using_queue.cpp)
+    - Variations:
+    - Implement stack using only one queue (use recursion call stack)
+    - Implement queue using stack
+        - by making enque() costly
+        - by making deque() costly
+        - by using one stack
