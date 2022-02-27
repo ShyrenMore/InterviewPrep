@@ -1,10 +1,10 @@
 /*
 given an infix exp as a string, convert it to postfix
 
-operator | associativity
-^ (power)| R to L
-*, /     | L to R
-+, -     | L to R
+operator | associativity    ^   
+^ (power)| R to L           |   precedence
+*, /     | L to R           |
++, -     | L to R           |
 
 precendence wise: ^ > *, / > +, -
 

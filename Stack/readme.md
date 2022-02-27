@@ -63,8 +63,23 @@
 - [Largest Rectangular Area in a Histogram](histogram.cpp)
     - dry run
 
+- rule for exp
+```
+operator | associativity    ^   
+^ (power)| R to L           |   precedence
+*, /     | L to R           |
++, -     | L to R           |
+
+if there are two operators 
+and you need to decide which operator to evaluate first
+you look at precedence table
+but if two operators have same precedence
+then look at associativity
+```
 - [Infix to Postfix conversion](infix_to_postfix.cpp)
 - [Evaluation of Postfix expression](postfix.cpp)
+- [Infix to Prefix conversion](infix_to_prefix.cpp)
+- [Evaluation of Prefix expression](prefix.cpp)
 
 ## Design questions on stack
 
@@ -72,6 +87,6 @@
     - dry run
 
 ## Intuition for stack problems
-- Usually used for optimising your O(N^2) idea
+- Usually used for optimising your O(N^2) idea with a tradeoff for space
 - when you need to play with greater/smaller indices
 - keeping a track of certain kind (next greater/prev greater) of elements
