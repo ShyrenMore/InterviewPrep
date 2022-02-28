@@ -80,3 +80,5 @@
         - by making enque() costly
         - by making deque() costly
         - by using one stack
+
+- [Reversing a Queue](reverse_queue.cpp)
