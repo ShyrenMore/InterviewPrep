@@ -1,8 +1,10 @@
 ### A new visitor?
-you can refer to
+you can refer readmes of
 - [LinkedList](LinkedList/)
 - [Matrix](Matrix/)
 - [Sorting](Sorting/)
+- [Stack](Stack/)
+- [Queue](Queue/)
 
 ### What is this repo about?
 - Interview prep 
@@ -58,8 +60,3 @@ Else
 
 ```
 
-
-### Stargazers over time
-
-
-[![Stargazers over time](https://starchart.cc/ShyrenMore/BasicDSA.svg)](https://starchart.cc/ShyrenMore/BasicDSA)
