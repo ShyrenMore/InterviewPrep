@@ -44,10 +44,10 @@ according to wikipedia
 - as a programmer, you do not have to worry about de-allocating the dynamically allocated memory
 - there is IndexOutOfBound checking, you get exception
 
-## 7] there is better multi-threading and exception handling 
+## Other features 
+- there is better multi-threading and exception handling 
+- difficult to write bad code in Java as compared to C/C++, hence Java code are more maintainable and more preferred by industries 
 
-## 8] difficult to write bad code in Java as compared to C/C++
-- hence Java code are more maintainable and more preferred by industries 
 
 # Variables and datatypes in Java
 
@@ -114,3 +114,30 @@ long | Long |
 float | Float | 
 double | Double | 
 boolean | Boolean | 
+
+# Autoboxing and Unboxing
+- related to wrapper classes 
+- autoboxing is basically implicit automatic typecasting of primitive datatype to non-primitive datatype
+- auto-unboxing is reverse that is implicit typecasting of non-primitive datatype into datatype 
+
+```
+class Test{
+    public static void main(String args[])
+    {
+        int x1 = 10;
+        Integer x2 = x1; // Autoboxing
+        int x3 = x2; // Auto-Unboxing
+        System.out.println(x1)
+        System.out.println(x2)
+        System.out.println(x3);
+    }
+}
+
+```
+
+```
+op
+10
+10
+10
+```
