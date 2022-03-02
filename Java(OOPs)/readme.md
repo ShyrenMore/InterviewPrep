@@ -91,3 +91,26 @@ Point p2 = p1;
 in the above code, p2 will not have a seperate block of memory allocated, it will point to same block of memory where p1 is pointing 
 
 3] Member of non-primitives get default values(like int variable get 0, boolean get 0) if not initialised, for primitive types we get compilation error 
+
+# Wrapper classes in Java
+
+- Java allows you to have non-primitive type for every primitive type. There are  built-in classes in Java, where every such class corresponds to a primitive type. These classes are called wrapper classes 
+
+- Need of wrapper classes: when you are programming in an object-oriented way, many times you want to deal with objects only 
+
+- eg: java Generics expect a class object to work, so on generics we have things like collections, hashset, etc <br>
+eg: I want ArrayList of integers, so you have to create an ArrayList of Integer type rather than int type 
+
+- so why Java has primitive type if everything is object oriented? <br>
+These features were inherited from c/c++ legacy. If I just want an array of integers in the program, I can use int to avoid the overhead caused by dealing with objects 
+
+Primitive Type | Wrapper Class | 
+------------- | :----------------: | 
+Char | Character | 
+byte | Byte | 
+short | Short | 
+int | Integer | 
+long | Long | 
+float | Float | 
+double | Double | 
+boolean | Boolean | 
