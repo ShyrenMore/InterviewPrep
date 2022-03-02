@@ -1,6 +1,6 @@
 # Features of Java
 
-## 1]platform independent
+## 1] platform independent
     
 - platform: A platform is a combination of OS and architecture that you are using 
     - eg windows+intel, windows+amd, etc 
@@ -48,3 +48,46 @@ according to wikipedia
 
 ## 8] difficult to write bad code in Java as compared to C/C++
 - hence Java code are more maintainable and more preferred by industries 
+
+# Variables and datatypes in Java
+
+- variables are a way of accessing and storing the data 
+- the data can be of different types hence we have different datatypes
+- datatypes also specify the memory needed for allocation
+- variable naming can also have $, numerics, _ <br>
+but variable name cannot begin with numeric
+- common conventions:
+    - camelCase for naming
+    - uppercase for contant/final variables 
+- types of variables
+    - primitives(int, char, boolean, byte)
+    - non-primitive (String, Array..., any user defined class types)
+        - basically object of some classes, class could be pre-defined or user-defined 
+
+Datatype | Possible values | Usage 
+------------- | :----------------: | :--:
+boolean | true or false | isMarried
+byte | -128 to 127 <br> (or -2^7 to 2^7-1) | Student's marks from 0 to 100, 1 is for signbit, rest 7 bits can be used
+short | -32768 to 32767 <br> (or -2^15 to 2^15-1) | 1 bit for sign, rest 15 bits can be used
+int | -2147483648 to 2147483647 <br> (or -2^31 to 2^31-1) |
+long | -2^63 to 2^63-1 |
+float | Single Precision 32 bit | 10.81 (weight, price)
+double | Double Precision 32 bit | 9.23 (div, /)
+char | 16 bit Unicode Characters ('\40000' to '\4ffff') | bigger range than c++(8 bits), range is from 0 to 2^16-1
+
+## Primitive vs Non - primitives
+
+In Java, Primitive and non-primitive data-types are treated differently in many ways
+
+1] Non-primitive type variables are always references 
+- by reference, we mean it just holds the memory reference where the object is stored
+
+2] Memory for non-primitive is always allocated on Heap
+
+```
+Point p1 = new Point();
+Point p2 = p1;
+```
+in the above code, p2 will not have a seperate block of memory allocated, it will point to same block of memory where p1 is pointing 
+
+3] Member of non-primitives get default values(like int variable get 0, boolean get 0) if not initialised, for primitive types we get compilation error 
