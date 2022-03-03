@@ -141,3 +141,49 @@ op
 10
 10
 ```
+
+# Java ip and op
+
+## Input
+- BufferedReader: used to read sequence of chars, has different functions
+
+#### Some general facts that you should know 
+
+- ```System.in``` is an ip stream that gives you a stream of bytes 
+- ```InputStreamReader``` converts the stream of bytes into chars
+- ```BufferredReader``` expects a stream of **chars** to read data
+- so if you want to take an int as an input, you need to convert it using wrapper class
+
+#### BufferredReader
+
+```
+BufferredReader br = new BufferredReader(new InputStreamReader(System.in));
+
+// reading a str
+String s = br.readLine();
+
+// reading an int
+int x = Integer.parseInt(br.readLine())
+```
+
+- BufferredReader ```throws IOException``` 
+- you have to import ```import java.io.*```
+
+#### Scanner
+
+- Scanner: advanced method of reading inputs
+- can read formatted text
+- has each read function for each datatype 
+- no need to catch any exception
+- need to import ```java.util.Scanner```
+
+```
+Scanner sc = new Scanner(System.in);
+String s = sc.readLine();
+int x = sc.nextInt();
+float f = sc.nextFloat();
+```
+
+- BufferedReader is more faster than scanner since it involves less pre-processing and flexible since you can define the buffer size
+- these advantages are only significant for large inputs 
+- BufferedReader is more synchronized, so whenever you are using threads, so BufferedReader should be preffered
