@@ -9,6 +9,12 @@ you can refer readmes of
 ### What is this repo about?
 - Interview prep 
 
+### Work in Progress
+- [Dynamic Programming](DynamicProgramming/)
+
+### Work that is delayed
+- [OOPS in Java](Java(OOPs)/)
+
 ### Some resources and hacks 
 
 - Cheatsheet for time and space complexity:
