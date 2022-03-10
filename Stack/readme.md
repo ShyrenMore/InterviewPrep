@@ -80,6 +80,7 @@ then look at associativity
 - [Evaluation of Postfix expression](postfix.cpp)
 - [Infix to Prefix conversion](infix_to_prefix.cpp)
 - [Evaluation of Prefix expression](prefix.cpp)
+- [Reverse stack els using recursion](recursive_reverse.cpp)
 
 ## Design questions on stack
 
