@@ -152,3 +152,26 @@ we have answers ready for n-3 and n-1 i.e these values are already present in ta
 - [longest common subsequence (memoization sol)](longest_common_subsequence_memoization.cpp)
 - [longest common subsequence (tabulation sol)](longest_common_subsequence_tabulation.cpp)
 
+- filling of dp table for tabulation 
+![daldena yad se]()
+
+## Variations of LCS
+- diff utility
+- minimum insertions and deletions to convert s1 into s2
+    - find LCS and then perform deletion or insertion on s1/s2
+    - first string is of len m, second is of len n, and LCS string is of len l, then we need to do (m-l) deletions and (n-l) insertions to convert s1 into s2
+
+- shortest common supersequence
+    - given two strings find third string which has both the strings as subsequence such that it's len is minimum 
+    - we do this by finding out LCS and then putting extra chars of both s1 and s2
+
+- longest palindromic subsequence
+    - given a string, find out longest subsequence that is a palindrome 
+    - create another string s2 which is reverse of s1, whatever is the LCS of s1,s2 is the answer 
+
+- longest repeating subsequence
+    - create another string s2 which is copy of s1
+    - if last two chars match and indexes are different 
+- space optimised DP solution of LCS
+- printing LCS
+    - we can use 2D DP array used in tabulation, we can start traversing from bottom-right, if both chars are matching goto diagonal else take max of upper and lower and go in that direction 
