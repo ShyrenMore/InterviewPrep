@@ -144,8 +144,11 @@ we have answers ready for n-3 and n-1 i.e these values are already present in ta
 
 - a subsequence of a string can be obtained by picking 0 or more chars from it and these chars should be picked in same order as they appear in string
 - in a string of len n, there can be 2^n subsequences
-- Problems: [longest common subsequence](longest_common_subsequence.cpp)
+- [longest common subsequence (recursive sol)](longest_common_subsequence_recursion.cpp)
 
 - recursion tree
 ![daldena yad se]()
+
+- [longest common subsequence (memoization sol)](longest_common_subsequence_memoization.cpp)
+- [longest common subsequence (tabulation sol)](longest_common_subsequence_tabulation.cpp)
 
