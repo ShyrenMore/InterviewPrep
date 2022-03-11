@@ -42,7 +42,7 @@ int fib(int n)
 
 - recursive tree for above program that shows the repititive compuatations for same sub-problems 
 
-![Image dalde bhai]
+![](imgs/2.jpg)
 
 - with memoization, we can reduce the time to O(N)
 
@@ -77,7 +77,9 @@ int fib(int n)
 - else if it has been already computed i.e if ```memo[i] != -1```, ```return memo[n]``` or ```memo[i] (iterative)``` since memo[n] will already has ans for that fib(n)
 
 
-![eff sol]()
+![](imgs/3.jpg)
+
+**Personal Note :** basically you can consider n going from it's original value of n to 0 and then again going from 0 to n but each step will have results
 
 ## Summary of memoization
 - the no of dimensions of memo arr depends on no of parameters that are changing 
@@ -116,6 +118,9 @@ theta(n) time
 theta(n) aux space
 ```
 
+- recursive tree for above
+![](imgs/1.jpg)
+
 ## Summary of Tabulation
 - the no of dimensions of memo arr depends on no of parameters that are changing 
 - size is determined by min and max value of that parameter 
@@ -134,3 +139,13 @@ we have answers ready for n-3 and n-1 i.e these values are already present in ta
 - However tabulation does not involve any recursive function call overhead
 - Typically tabulation based solution are faster and memoization based solutions are easy to implement IF we have recursive solution
 - mostly please try to write recursive solution
+
+# Longest common subsequence
+
+- a subsequence of a string can be obtained by picking 0 or more chars from it and these chars should be picked in same order as they appear in string
+- in a string of len n, there can be 2^n subsequences
+- Problems: [longest common subsequence](longest_common_subsequence.cpp)
+
+- recursion tree
+![daldena yad se]()
+
