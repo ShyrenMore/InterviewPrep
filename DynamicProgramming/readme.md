@@ -184,3 +184,23 @@ Given an array of coin types or values and a sum, find total posiible ways to ge
 
 - [TBD: space optimised sol for coin change]()
  ![bhay add kar dena]
+
+# Edit distance
+
+Given two strings s1 and s2, convert s1 into s2 by doing 3 operations: insert, delete and replace. <br>
+what is the minimum number of operations to convert s1 -> s2
+
+```
+ip: s1="CAT", s2="CUT"
+op: 1 (replace instead of delete, insert)
+
+ip: s1="GEEK", s2="GEEKS"
+op: 1 (insert)
+
+ip: s1="SATURDAY", s2="SUNDAY"
+op: 3 (delete A, T) and replace R with N
+```
+
+- [Recursive sol for edit distance problem](edit_distance_recursive.cpp)
+
+![Dry run pleash add kar diyo]
