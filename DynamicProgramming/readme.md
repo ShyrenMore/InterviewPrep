@@ -175,3 +175,12 @@ we have answers ready for n-3 and n-1 i.e these values are already present in ta
 - space optimised DP solution of LCS
 - printing LCS
     - we can use 2D DP array used in tabulation, we can start traversing from bottom-right, if both chars are matching goto diagonal else take max of upper and lower and go in that direction 
+
+# Coin change (count combinations)
+
+Given an array of coin types or values and a sum, find total posiible ways to get sum using given types or values of coins
+
+- [recursive and tabular coin change](coin_change_recursive.cpp)
+
+- [TBD: space optimised sol for coin change]()
+ ![bhay add kar dena]
