@@ -201,6 +201,15 @@ ip: s1="SATURDAY", s2="SUNDAY"
 op: 3 (delete A, T) and replace R with N
 ```
 
+Application of Edit distance:
+- suggesting spelling errors: if you type spelling of a word wrong, we can use edit distance to find closest distance that is present in dictionary
+- also has applications in bio-informatics
+<br> 
+
 - [Recursive sol for edit distance problem](edit_distance_recursive.cpp)
 
 ![Dry run pleash add kar diyo]
+
+- [DP sol for edit distance problem](edit_distance_dp.cpp)
+
+![Dry run not drawn yet]
