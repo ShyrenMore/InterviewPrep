@@ -147,13 +147,13 @@ we have answers ready for n-3 and n-1 i.e these values are already present in ta
 - [longest common subsequence (recursive sol)](longest_common_subsequence_recursion.cpp)
 
 - recursion tree
-![daldena yad se]()
+![](imgs/5.jpg)
 
 - [longest common subsequence (memoization sol)](longest_common_subsequence_memoization.cpp)
 - [longest common subsequence (tabulation sol)](longest_common_subsequence_tabulation.cpp)
 
 - filling of dp table for tabulation 
-![daldena yad se]()
+![](imgs/4.jpg)
 
 ## Variations of LCS
 - diff utility
@@ -208,8 +208,33 @@ Application of Edit distance:
 
 - [Recursive sol for edit distance problem](edit_distance_recursive.cpp)
 
-![Dry run pleash add kar diyo]
+![](imgs/6.jpg)
 
 - [DP sol for edit distance problem](edit_distance_dp.cpp)
 
 ![Dry run not drawn yet]
+
+# Longest Increasing Subsequence
+
+Find all subsequences which are increasing and out of all those increasing subsequences, find the sequence having maximum length
+
+```
+ip: arr[] = {3, 4, 2, 8, 10}
+op: 4
+exp: longest inc subseq = {3, 4, 8, 10}
+it's len is 4
+
+ip: arr[] = {4, 10, 6, 5, 8, 11, 2, 20}
+op: 5
+exp: {4, 5, 8, 11, 20} 
+or {4, 6, 8, 11, 20} is LIS
+
+ip: arr[] = {10, 20, 30}
+op: 3
+
+ip: arr[] = {30, 20, 10}
+op: 1
+```
+
+- a very naive solution would be generate all subsequences, find which ones are increasing and take maximum of it, the time complexity would be at least ```O(2^n)```
+
