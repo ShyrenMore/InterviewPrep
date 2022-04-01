@@ -8,6 +8,7 @@
 - **Descendants** of a node are all the nodes that lie in sub-tree with this particular node as root
 - **Degree** of node is no of children of that node
 - **Internal nodes** are nodes which do not have degree 0 or are not leaf nodes 
+- The root is an internal node, except in the special case of a tree that consists of just one node (and no edges)
 
 # Application of Tree 
 - to represent hierarchical data 
