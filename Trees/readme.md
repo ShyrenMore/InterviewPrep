@@ -28,3 +28,23 @@
     - suffix tree: used to do fast pattern searches in a string 
     - Binary Index Tree: used for range query searches, faster for limited set of operations
     - Segment Tree: used for range query searches, comparatively more powerful than Binary Index Tree 
+
+# Binary Tree
+
+- a tree in which every node has at most two children or degree of a node can be at-most two
+- a node of a binary tree consists of data and reference for left and right node 
+- why we tree mostly BST and not n-ary tree: segment trees, binary heap use binary tree
+- [representation of binary tree](basics.java)
+
+# Tree traversals
+
+Why do we need tree traversals?
+- for searching
+- for finding size, or counting no of nodes
+
+Popular traversals:
+- BFS or level order traversal
+- DFS
+    - Inorder (LNR - left node right)
+    - Pre-order (NLR - node left right)
+    - Post-order (LRN - left right node)
