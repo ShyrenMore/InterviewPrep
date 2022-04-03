@@ -45,6 +45,8 @@ Why do we need tree traversals?
 Popular traversals:
 - BFS or level order traversal
 - DFS
-    - Inorder (LNR - left node right)
-    - Pre-order (NLR - node left right)
+    - [Inorder](inorder.java) (LNR - left node right)
+        - dry run | theory of code
+    - [Pre-order](preorder.java) (NLR - node left right)
+        - dry run | theory of code
     - Post-order (LRN - left right node)
