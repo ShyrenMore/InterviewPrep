@@ -49,4 +49,6 @@ Popular traversals:
         - dry run | theory of code
     - [Pre-order](preorder.java) (NLR - node left right)
         - dry run | theory of code
-    - Post-order (LRN - left right node)
+    - [Post-order](postorder.java) (LRN - left right node)
+
+- [Height of Binary tree](binary_tree_height.java)
