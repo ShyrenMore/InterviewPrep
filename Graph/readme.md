@@ -48,3 +48,52 @@
 - A real life example is a graph of road networks, where roads are connected to multiple cities and weight of edges is determined by length of the road. 
 - If two cities are far away from each other then the road or edge that connects these two cities has more weight comapred to closer cities 
 - A similar example is with routers in computer networks 
+
+# Graph representation
+
+## Adjacency Matrix 
+- create a matrix of size V * V
+```
+mat[i][j] = 1, if there is an edge from vertex i to j
+          = 0, otherwise 
+```
+- For an undirected graph, adjacency matrix is symmetric matrix i.e lower triangle and upper triangle are mirror images of each other along the diagonal
+
+### How do we represent a graph having vertex name as strings eg graph of cities 
+In that scenario we need additional data structure: array, <br>
+so we can use corresponding index for a city name in adj matrix, but let's say we have to find index of city "CDE", so I will have to linearly traverse, so for efficient implementation, one hash table ```h``` would also be required to do reverse mapping
+```
+h {ABC} = 0
+h {CDE} = 2
+...
+```
+
+### Properties of adjacency matrix
+- Space required: ```θ(V x V)```
+- check if u and v are adjacent: ``θ(1)``
+- find all vertices adjacent to u: ``θ(v)``
+- find degree of u: ``θ(v)`` - count no of ones in u row
+- add/remove an edge: ``θ(1)`` - changing cell value
+- add/remove a vertex: ``θ(v^2)`` - create a bigger matrix and copy the matrix
+
+## Adjacency List 
+
+### Problems of adj matrix:
+- stores redundant info i.e vertices which are not connected to a specific vertex
+- these makes finding all adjacent of a vertex operation faster, this operation is used in lot of algos 
+
+- Hence in adjacency list we only store vertices that are adjacent to it
+- we maintain an array of list, the list could be LinkedList, dynamic sized arrays, etc
+- we use index as vertex number 
+
+### Properties of adjacency matrix
+- Space required: 
+    - undirected: ```θ(V + 2E)```
+    - directed: ```θ(V + E)```
+    - v sized array, in undirect every edge contributes 2 cells
+
+- check if u and v are adjacent: ```O(v)``` - go to uth index and traverse that list till we reach v
+- find all vertices adjacent to u: ```θ(degree(u))```
+- find degree of u: ```θ(1)``` - count no of ones in u row
+- add an edge: ``θ(1)`` - add as first node
+- remove an edge: ```O(v)``` - create a bigger matrix and copy the matrix
