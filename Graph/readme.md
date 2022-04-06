@@ -97,3 +97,15 @@ h {CDE} = 2
 - find degree of u: ```θ(1)``` - count no of ones in u row
 - add an edge: ``θ(1)`` - add as first node
 - remove an edge: ```O(v)``` - create a bigger matrix and copy the matrix
+
+# Diff b/w adjacency list and matrix
+
+-  if you write BFS, Dijktra's code using adjacency list it is ```O(V+E)``` but if u use adj matrix it is ```>θ(v*v)``` since these algos need to find adj vertices of u
+<p align="center">
+  <img src="imgs/list_vs_matrix.jpg" width="680px" alt="sort" title="sort"/>
+</p>
+
+# Questions
+
+- [Breadth-first-search (BFS)](BFS/)
+
