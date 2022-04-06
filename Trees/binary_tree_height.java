@@ -31,4 +31,6 @@ public class binary_tree_height {
 
 /**
  * op: 3
+ * Time: O(n)
+ * SPace: O(h)
  */
