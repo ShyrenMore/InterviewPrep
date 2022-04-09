@@ -54,3 +54,7 @@ Popular traversals:
 - [Height of Binary tree](binary_tree_height.java)
 - [Print Nodes at distance K](printKthNode/)
 - [Level order traversal](Level_order_traversal/)
+- [Size of a binary tree](binary_tree_size.cpp)
+    - [dry run TBA]
+
+- [Maximum value in a binary tree](Maximum_of_a_binary_tree/)

@@ -47,7 +47,7 @@ ip: bin tree with root as 10, left child 20, right child 30
 - when we traverse one level completely, push null marker in queue 
 - when we see null in queue next time, it means we have reached end of current level so print new line and null into quueue for next iteration or level
 
-[Level order traversal 1st solution](los_line_by_line_1.cpp)
+[Level order traversal 1st solution](los_line_by_line.cpp)
 - dry run
 
 ### Level order traversal 2nd solution
