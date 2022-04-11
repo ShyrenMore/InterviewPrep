@@ -58,3 +58,5 @@ Popular traversals:
     - [dry run TBA]
 
 - [Maximum value in a binary tree](Maximum_of_a_binary_tree/)
+
+- [Print left view of binary tree](Left_view_of_binary_tree/)
