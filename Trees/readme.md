@@ -60,3 +60,5 @@ Popular traversals:
 - [Maximum value in a binary tree](Maximum_of_a_binary_tree/)
 
 - [Print left view of binary tree](Left_view_of_binary_tree/)
+
+- [Children sum property](Children_sum_property/main.cpp)
