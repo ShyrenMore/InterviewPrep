@@ -62,5 +62,5 @@ Popular traversals:
 - [Print left view of binary tree](Left_view_of_binary_tree/)
 
 - [Children sum property](Children_sum_property/main.cpp)
-
 - [Width of binary tree](Width/main.cpp)
+- [Check for balanced tree](Balanced_tree/main.cpp)
