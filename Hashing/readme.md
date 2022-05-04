@@ -234,3 +234,95 @@ struct MyHash
     }
 };
 ```
+
+## Open Addressing
+
+- use single array without any chains 
+- one requirement for open addr
+```
+No of slots (m) >= No of keys to be inserted (n)
+```
+- more cache friendly than Chaining 
+
+- eg
+```
+hash func = h(key) = key % 7
+keys to be inserted: 50, 51, 49, 16, 56, 15, 19
+```
+
+- Vertical representation of array (hashtable) after inserting keys using **Linear Probing** i.e in case of collision search for the next empty slot present linearly 
+
+```
+idx | value
+0   | 49
+1   | 50 
+2   | 51 
+3   | 16
+4   | 56
+5   | 15
+6   | 19
+```
+
+- If a key maps to last slot and last slot is occupied, search in a circular manner  
+- **for searching** a key, find hash_func again, 
+if found, great, 
+    else stop till
+      - go to next slot till key found 
+      - stop if empty slot found 
+      - if after traversing entire table, key still not found  
+
+- **for deletion**, find hash func value viz idx, start searching, when u delete the slot, mark it as deleted so search function can work properly 
+- search function will now continue searching if slot is marked deleted, and stops when either element is found or empty slot is encountered 
+
+### Problem of clustering in Open Addressing due to linear probing 
+
+- Since chaining is not allowed, keys having same hash func value will keep on piling one after the other thus making search, insert and delete operations costly 
+- To handle this, we 
+
+```
+h(key) = key % m
+hash(key, i) =  (h(key) + i) % m
+```
+
+```
+Quadratic probing results in Secondary clusters
+h(key) = key % m
+hash(key, i) =  (h(key) + i*i) % m
+
+```
+
+### Double hashing 
+
+```
+Double Hashing
+h(key) = key % m
+hash(key, i) =  (h1(key) + i*h2(key)) % m
+i = ith collision
+```
+
+- In double hashing we use two hash functions 
+    - one is simple hash
+    - the other is to find next slot 
+
+- If h2(key) is relatively prime to m, then it always find a free slot 
+- No clustering 
+- Distributes keys uniformly than linear and quadraric probing 
+- h2(key) should never return 0 for any value
+- **Algorithm**
+
+```
+void doubleHashingInsert(int key)
+{
+    if(TableFull)
+        return error
+    
+    probe = h1(key)
+    offset = h2(key)
+
+    // whenver there is coll, add offset to idx
+    while(table[probe] is occupied)
+        probe = (probe + offset) % m
+
+    table[probe] = key;
+}
+```
