@@ -140,3 +140,97 @@ Group of hash functions, randomly pick a hash function and use it to hash all th
 **bad value of m will be power of 2 or 10 for simple hash**
 - eg m = 10^3, here we are considering only last 3 digits of a number, we are ignoring the other 7 nos 
 - for power of 2, there is a possibility of considering only some bits of binary representation 
+
+# Collision Handling 
+
+- If we know keys in advance, then we can do **Perfect Hashing**
+- else if we do not know keys, then we use
+    - Chaning
+    - Open Addressing
+        - Linear Probing
+        - Quadratic Probing
+        - Double Hashing
+
+## Chaining
+
+- Hashtable will be an array of of Linked List Headers
+- Whenever a collision happens, insert the item at the end of LL 
+- eg
+```
+hash func = h(key) = key % 7
+keys to be inserted: 50, 21, 58, 17, 15, 49, 56, 22, 23, 25
+```
+
+- Vertical representation of array (hashtable) after inserting keys 
+
+```
+idx | LL
+0   | 21 -> 49 -> 56
+1   | 50 -> 15 -> 22
+2   | 58 -> 23
+3   | 17
+4   | 25
+5   |
+6   |
+```
+
+### Performance of Chaning
+- m: no of slots Hash table
+- n: no of keys to be inserted 
+- **Load factor = n/m**
+- Most library func in C++/Java provide an option to specify load factor 
+- Small hash table results in big load factor, more likely to have more collisions  
+- viceversa big hash table will result in low load factor thereby having less no of collisions 
+- Hence, there will be a trade-off b/w space and no of collisions 
+
+**Expected chain length**: 
+- Worst case will be all keys go to same index, O(no of keys) will be chain length
+- We don't know average case scenario, so we make an assumption keys will be uniformly distributed 
+- hence chain length in this case will be load factor 
+
+**Expected time to search/insert/delete** = ``O(1+load factor)``
+
+**Data strcuture to store chain**
+- Linked List: Search/Del/insert will be O(len), not cache friendly, not space optimised
+- Dynamic arrays: Search/Del/insert will be O(len), cache friendly
+- Self balancing BST (AVL tree, red black tree): Search/Del/insert will be O(log(len))
+
+### Implementation of Chaning using LL
+
+```
+struct MyHash
+{
+    int hashTableSize;
+    // list is a doubly linked list
+    list <int> *table;
+
+    MyHash(int sz)
+    {
+        hashTableSize = sz;
+        table = new list<int> [sz];
+    }
+
+    void insertKey(int key)
+    {
+        int idx = key % hashTableSize;
+        table[idx].push_back(key);
+    }
+
+    bool search(int key)
+    {
+        int idx = key % hashTableSize;
+        // traverse the specific linked list
+
+        for(auto x : table[i])
+            if (x == key)
+                return true;
+        return false;
+    }
+
+    void removeKey(int key)
+    {
+        int idx = key % hashTableSize;
+        table[idx].remove(key);
+    }
+};
+```
