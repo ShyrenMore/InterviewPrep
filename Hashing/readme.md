@@ -2,19 +2,20 @@
 - used to implement dictionaries (key-value pairs)
 - used to implement sets (only keys)
 
-### Search, insert, del in O(1) time on avg
-
+- **Search, insert, del in O(1) time on avg**  <br>
 eg: Phone no book
 
-### All nos in hashtable are unique
+- **All nos in hashtable are unique** <br>
 If u insert an existing key, it will overwrite the prev key 
+
+- **Hashing is strict search i.e it cannot find(lookup) closest value in ```O(1)``` time** 
 
 ### Not to be used if you are asked 
 - closest value // AVL or redblack tree
+    - finding a key which is just above or below the given key in logn time 
 - sorted order data // AVL or redblack tree
 - prefix searching (finding key that match with a prefix) // Trie
 
-### Hashing is strict search 
 
 ## Applications
 - Dictionaries
@@ -67,7 +68,7 @@ search(i){
 
 ```
 
-- In case of range 1000-1999
+- In case keys are in range 1000-1999
 
 ```
 
@@ -96,39 +97,46 @@ search(i){
 ```
 
 ## Problems with Direct index table cannot handle
-- large keys
-- floating point nos as an index
-- keys that are strings
+- large keys (10^10 like phone nos)
+- floating point nos as an index (10.97 as an index)
+- keys that are strings (index is gfg)
 
 # Idea of hashing
 
-Take a large universe of keys, eg phone nos, names, emp_ids (E1021)
+Take a large universe of keys, eg phone nos, names, emp_ids (eg: E1021) <br>
 use hash function that does some black magic for converting large keys into small values that can be used as an index for hashtable
 
 - Hashtable: array that has indexes 0 to m-1
-- Hash functions: 
+- Hash functions: functions that transform large keys into small values 
 
 ## How Hash function do the black magic?
 
-### Some necessary requirements for hashtable
+### Some necessary requirements for hash function
 - Every time you use the key for the hash function, it should generate same idx 
-- generate values from 0 to m-1, m is size of hash table
+- should generate values from 0 to m-1, m is size of hash table
 - should be fast, O(1) for int and O(len) for string of length 'len'
-- Should uniformly distribute the input keys (practically impossible)
+- Should uniformly distribute the input keys into hash table slots (practically impossible)
 
 ### Sample hash functions
 
+```
 1) h(large_int_key) = large_int_key % m
-2) For strings, weighted sum
-```
+eg: phone nos, m is hash table size which depends on no of keys that you are going to insert
+hence, hash function will be phone_no % m
+but there will be many phone nos which after modulo will result in same hash value (collision)
+
+2) Hash function for strings, weighted sum
 str[] = "abcd"
-(str[0]*x^0 + str[1]*x^1 + str[2]*x^2 + str[3]*x^3)%m 
-```
+hash_func = (str[0]*x^0 + str[1]*x^1 + str[2]*x^2 + str[3]*x^3) % m 
+
 3) Universal Hashing
 Group of hash functions, randomly pick a hash function and use it to hash all the data in the hash table
+```
 
 
-### Collision: Two distinct large keys when given to a hash function, convert to same small key
+**Collision:** Two distinct large keys when given to a hash function, convert to same small key 
 
-### Typically m is chosen as prime no which are not close to powers of 2 or 10
-### bad value of m will be power of 2 or 10 for simple hash
+**Typically m is chosen as prime (less common factors) no which are not close to powers of 2 or 10** 
+**bad value of m will be power of 2 or 10 for simple hash**
+- eg m = 10^3, here we are considering only last 3 digits of a number, we are ignoring the other 7 nos 
+- for power of 2, there is a possibility of considering only some bits of binary representation 
