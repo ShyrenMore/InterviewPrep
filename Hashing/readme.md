@@ -326,3 +326,11 @@ void doubleHashingInsert(int key)
     table[probe] = key;
 }
 ```
+
+Chaining | Open Addressing |
+------------- | :----------------: |
+Hash Table never fills |  Table may become full and resizing becomes mandatory
+Less sensitive to Hash functions |  Extra care required for clustering
+Not cache friendly | Cache friendly
+Extra space for links | Extra space might be needed to achieve same performance as chaining
+
