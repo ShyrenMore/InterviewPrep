@@ -337,3 +337,4 @@ Extra space for links | Extra space might be needed to achieve same performance 
 # Problems based on Hashing concept 
 
 - [unordered_set](unordered_set.cpp)
+- [unordered_map](unordered_map.cpp)

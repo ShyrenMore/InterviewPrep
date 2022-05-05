@@ -42,7 +42,7 @@ int main()
 
     /*
     finding an element in unordered_set using find()
-    find() returns an iterator to el if el is present
+    find(): if el is present returns an iterator pointing to el that is presentr after last el
     else if not present it returns s.end()
     */
 
