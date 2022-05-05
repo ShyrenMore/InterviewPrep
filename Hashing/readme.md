@@ -334,3 +334,6 @@ Less sensitive to Hash functions |  Extra care required for clustering
 Not cache friendly | Cache friendly
 Extra space for links | Extra space might be needed to achieve same performance as chaining
 
+# Problems based on Hashing concept 
+
+- [unordered_set](unordered_set.cpp)
