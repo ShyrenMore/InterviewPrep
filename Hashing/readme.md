@@ -338,3 +338,5 @@ Extra space for links | Extra space might be needed to achieve same performance 
 
 - [unordered_set](unordered_set.cpp)
 - [unordered_map](unordered_map.cpp)
+- [Count distinct elements](count_distinct_els.cpp)
+- [Frequency of arr elements](freq.cpp)
