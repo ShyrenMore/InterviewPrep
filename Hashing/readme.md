@@ -340,3 +340,4 @@ Extra space for links | Extra space might be needed to achieve same performance 
 - [unordered_map](unordered_map.cpp)
 - [Count distinct elements](count_distinct_els.cpp)
 - [Frequency of arr elements](freq.cpp)
+- [Count of Intersection of two arrays](intersection_hashing.cpp)
