@@ -5,15 +5,14 @@ you can refer readmes of
 - [Sorting](Sorting/)
 - [Stack](Stack/)
 - [Queue](Queue/)
+- [Hashing](Hashing/)
 
 ### What is this repo about?
 - Interview prep 
 
-### Work in Progress
+### Work halted for indefinite period
 - [Dynamic Programming](DynamicProgramming/)
 
-### Work that is delayed
-- [OOPS in Java](Java(OOPs)/)
 
 ### Some resources and hacks 
 
