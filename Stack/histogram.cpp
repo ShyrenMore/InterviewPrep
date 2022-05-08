@@ -131,6 +131,9 @@ when we push an index i into stack
 when top of stack is < curr_el
 the item below it, is prev smaller of it 
 when we pop item of stack, 
+
+Time: O(n)
+Space: O(n)
 */
 
 int getMaxHistogramArea_eff(int arr[], int n)
