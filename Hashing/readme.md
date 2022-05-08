@@ -348,5 +348,16 @@ Extra space for links | Extra space might be needed to achieve same performance 
 - [Check if subarray has given sum](subarray_given_sum.cpp)
     - generalised problem of zero sum subarray
 
-- [Longest subarray with given sum](longest_subarray_given_sum.cpp)
+- [Length of Longest subarray with given sum](longest_subarray_given_sum.cpp)
     - **need to see video definitely** 
+
+- [Length of Longest subarray with equal no of 0s and 1s](longest_subarray_equal0s1s.cpp)
+    - **most asked interview question**
+
+- [Longest common span with same sum in two binary arrays](longest_span_with_sameSum_in_binary_arr.cpp)
+
+- [Longest *consecutive* subsequence](longest_CONSECUTIVE_subsequence.cpp)
+
+- [Count Distinct Elements in Every Window](distinct_el_in_window.cpp)
+
+- [More than n/k Occurences](n_k_occurences.cpp)
