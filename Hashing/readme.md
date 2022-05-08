@@ -340,4 +340,13 @@ Extra space for links | Extra space might be needed to achieve same performance 
 - [unordered_map](unordered_map.cpp)
 - [Count distinct elements](count_distinct_els.cpp)
 - [Frequency of arr elements](freq.cpp)
-- [Count of Intersection of two arrays](intersection_hashing.cpp)
+- [Count Distinct els of Intersection of two arrays](intersection_hashing.cpp)
+- [Count Distinct els of union of two arrays](union_hashing.cpp)
+- [Pair with given sum in an unsorted array](pair_sum.cpp)
+- [Check if subarray has zero sum](subarray_zero_sum.cpp)
+    - **hashing + prefix sum go brr**
+- [Check if subarray has given sum](subarray_given_sum.cpp)
+    - generalised problem of zero sum subarray
+
+- [Longest subarray with given sum](longest_subarray_given_sum.cpp)
+    - **need to see video definitely** 
