@@ -238,3 +238,4 @@ op: 1
 
 - a very naive solution would be generate all subsequences, find which ones are increasing and take maximum of it, the time complexity would be at least ```O(2^n)```
 
+- [Longest increasing subsequence](longest_increasing_subsequence.cpp)
