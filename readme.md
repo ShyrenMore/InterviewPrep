@@ -65,3 +65,18 @@ Else
 
 ```
 
+- Identifying the solution methodology by looking at constraints 
+- upto n<=10^3 naive sols will work most of the times
+
+n-value | Maximum time it can take |
+------- | :----------------: |
+n <= 12 | O(n!)
+n <= 25 | O(2^n)
+n <= 100 | O(n^4)
+n <= 500 | O(n^3)
+n <= 10^4 | O(n^2)
+n <= 10^6 | O(nlogn) - sorting 
+n <= 10^8 | O(n) - hashing
+n > 10^8 | O(logn) or O(1) - binary search
+
+
