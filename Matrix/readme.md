@@ -10,6 +10,8 @@ int arr[][2][2] = {{{1, 2}, {3, 4}},
                    {{5, 6}, {7, 8}}}
 ```
 - from C++14, variable size arrays are allowed
+- **matrix.size()** will return the no of rows i.e no of inner vectors 
+- **matrix[0].size() or matrix[i].size()** will return the no of columns i.e no of elements in one of the inner vectors
 
 ## Ways of creating multi-dimensional array
 
@@ -79,6 +81,7 @@ op: 10 10 10 10 10 10
 ```
 vector<vector<int>> ans(ROW_VAL, vector<int>(COL_VAL));
 ```
+
 
 ## Print a matrix in snake pattern 
 
@@ -231,6 +234,29 @@ void transpose(int mat[n][n])
         for(int j = i + 1; j < n; j++)
             swap(mat[i][j], mat[j][i]);
 }
+```
+
+**If matrix is not a square matrix**
+
+- Since we want transpose initialise n with no of columns i.e matrix[0].size() and m with no of rows i.e matrix.size()
+- Naive sol: ``O(n*m)`` time and space  
+
+```
+class Solution {
+public:
+    vector<vector<int>> transpose(vector<vector<int>>& matrix) {
+        
+        int n = matrix[0].size();
+        int m = matrix.size();
+        vector<vector<int>> ans(n, vector<int>(m));
+        
+        for(int i = 0; i < n; i++)
+            for(int j = 0; j < m; j++)
+                ans[i][j] = matrix[j][i];
+        
+        return ans;
+    }
+};
 ```
 
 ## Rotate a matrix by 90 deg anti-clockwise 
