@@ -74,6 +74,12 @@ for(int i = 0; i < arr.size(); i++)
 op: 10 10 10 10 10 10
 ```
 
+**Initialising a 2d vector***
+
+```
+vector<vector<int>> ans(ROW_VAL, vector<int>(COL_VAL));
+```
+
 ## Print a matrix in snake pattern 
 
 ```
