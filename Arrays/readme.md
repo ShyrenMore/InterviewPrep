@@ -100,3 +100,12 @@ Update ith el: O(1)
 - [Maximum Sum Subarray](maxsum_subarr.cpp)
     - dry run
 - [Maximum length even-odd subarray](maxlen_subarr.cpp)
+
+**Sliding Window**
+
+- a common hint would be array contains non-negative ints
+- [Maximum sum of k contigous elements](Sliding_window/max_sum_k_consecutive_els.cpp)
+- [Subarray of size k with given sum](Sliding_window/subarray_size_k_given_sum.cpp)
+- [Subarray of any size with given sum for an unsorted array having non-negative ints](Sliding_window/subarray_any_size_given_sum.cpp)
+- [N-bonacci numbers](Sliding_window/nbonacci.cpp)
+- [Count distinct elements in every window of size k](Sliding_window/count_dist_els_of_window_size_k.cpp)
