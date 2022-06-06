@@ -159,7 +159,8 @@ for inserting at tail, it will be same, you just have to return original head re
 
 - [Delete a node with only ptr given to it](randomDelete.java)
 - [Segregate Even & Odd nodes for SLL](segregateEvenOdd.java)
-- [Intersection point of two LL, code TBD](intersectionPoint.java)
+- [Intersection point of two LL](intersectionPoint.java)
+- [Intersection point of two LL Efficient](intersectionPointEfficient.cpp)
 - [Pairwise swap nodes of a LL](pairwiseSwapNodes.java)
 - [Clone a LL using a random pointer](cloneLL.java)
     - **input**
