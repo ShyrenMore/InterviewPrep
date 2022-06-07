@@ -164,6 +164,7 @@ for inserting at tail, it will be same, you just have to return original head re
 - [Pairwise swap nodes of a LL](pairwiseSwapNodes.java)
 - [Clone a LL using a random pointer](cloneLL.java)
     - **input**
+- [Merge two sorted lists](merge_sorted_lists.cpp)
 
 ### LRU Cache
 - Cache is a memory viz close to CPU has very less access time i.e very fast small in size compared RAM    
