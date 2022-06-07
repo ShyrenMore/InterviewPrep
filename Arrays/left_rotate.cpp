@@ -99,6 +99,9 @@ void reverse_method3(int arr[], int low, int high)
 
 void leftRotateBysteps_method3(int arr[], int n, int d)
 {
+    // in case d>n
+    d = d % n;
+
     reverse_method3(arr, 0, d - 1);
     reverse_method3(arr, d, n - 1);
     reverse_method3(arr, 0, n - 1);
