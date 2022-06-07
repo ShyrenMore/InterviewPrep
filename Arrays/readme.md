@@ -93,7 +93,7 @@ Update ith el: O(1)
 - [Stock buy and sell](stock_buy_and_sell.cpp)
     - dry run
     - ![](imgs/stock.jpg)
-- [Trapping Rainwater TBD]()
+- [Trapping Rainwater](trapping_rainwater.cpp)
 - [Maximum consecutive ones](max_consecutive_ones.cpp)
 
 
@@ -115,11 +115,12 @@ Update ith el: O(1)
 - [Maximum sum of k contigous elements](Sliding_window/max_sum_k_consecutive_els.cpp)
 - [Subarray of size k with given sum](Sliding_window/subarray_size_k_given_sum.cpp)
 - [Subarray of any size with given sum for an unsorted array having non-negative ints](Sliding_window/subarray_any_size_given_sum.cpp)
+- [Printing Subarray of any size with given sum for an unsorted array having non-negative ints](Sliding_window/print_subarray_any_size_given_sum.cpp)
 - [N-bonacci numbers](Sliding_window/nbonacci.cpp)
 - [Count distinct elements in every window of size k TBD code](Sliding_window/count_dist_els_of_window_size_k.cpp)
 
 **Misc: Common questions asked in Amazon/Microsoft/Adobe**
 
 - [Finding 3rd largest element in O(n) time](3rd_largest.cpp)
-- [Minimum distance between two numbers](min_dist.cpp)
+- [Minimum distance between two numbers TBD](min_dist.cpp)
 - [Rearrange an array with O(1) extra space](re-arrange_arr.cpp)
