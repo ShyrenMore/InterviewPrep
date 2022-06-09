@@ -342,7 +342,7 @@ Extra space for links | Extra space might be needed to achieve same performance 
 - [Frequency of arr elements](freq.cpp)
 - [Count Distinct els of Intersection of two arrays](intersection_hashing.cpp)
 - [Count Distinct els of union of two arrays](union_hashing.cpp)
-- [Pair with given sum in an unsorted array](pair_sum.cpp)
+- [Pair with given sum in an unsorted array (Two Sum problem)](pair_sum.cpp)
 - [Check if subarray has zero sum](subarray_zero_sum.cpp)
     - **hashing + prefix sum go brr**
 - [Check if subarray has given sum](subarray_given_sum.cpp)
