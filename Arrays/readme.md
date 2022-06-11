@@ -111,6 +111,17 @@ Update ith el: O(1)
 
 **Sliding Window**
 
+**IMP NOTE:**
+- all these subarrays may or may not be the longest subarrays
+```
+eg:
+case: arr = [5,2,3,1,1] and target sum = 5
+here longest subarray having sum = 5 is [2, 3]
+But with sliding window the output will be [5]
+```
+- these subarrays only look for solution which may or may not be optimal
+- for optimal solution we refer to prefix sum
+
 - a common hint would be array contains non-negative ints
 - [Maximum sum of k contigous elements](Sliding_window/max_sum_k_consecutive_els.cpp)
 - [Subarray of size k with given sum](Sliding_window/subarray_size_k_given_sum.cpp)
