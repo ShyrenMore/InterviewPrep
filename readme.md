@@ -1,6 +1,11 @@
 ### A new visitor?
 you can refer readmes of
 - [LinkedList](LinkedList/)
+- [Arrays](Arrays/)
+    - for every array quest, you should ask the interviewer if not already specified:
+    - is the array sorted?
+    - minimum no of elements in array?
+    - does the array contain negative elements
 - [Matrix](Matrix/)
 - [Sorting](Sorting/)
 - [Stack](Stack/)
