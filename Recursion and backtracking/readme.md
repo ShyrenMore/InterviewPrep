@@ -28,7 +28,18 @@ Some more basic problems
 - [Print Linearly from N to 1 but by backtracking](Basic_Problems/print_N_to_1_backtrack.cpp)
     - i.e i+1 is not allowed
 
+## Parameterised and Functional Recursion 
 
+- [Sum of first N numbers using parameterised recursion](sum_parameterised.cpp)
+    - return type of void, everything stays inside function
+- [Sum of first N numbers using functional recursion](sum_functional.cpp)
+    - return the sum instead of printing , used in DP
+    - ``f(n)`` is sum of first n nos
+    - if n = 3: 3+f(2)
+
+- [Factorial of N](n_factorial.cpp)
+    - [parameterised way](para_factorial.cpp)
+    - [Functional way](functional_factorial.cpp)
 
 # **Backtracking**
 
