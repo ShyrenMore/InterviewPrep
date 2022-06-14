@@ -94,7 +94,6 @@ Update ith el: O(1)
     - dry run
     - ![](imgs/stock.jpg)
 - [Trapping Rainwater](trapping_rainwater.cpp)
-- [Maximum consecutive ones](max_consecutive_ones.cpp)
 
 
 **Greedy problems having non-greedy and more optimal sols**
@@ -105,9 +104,11 @@ Update ith el: O(1)
 
 **Subarray problems based on pure problem solving**
 
-- [Maximum Sum Subarray](maxsum_subarr.cpp)
+- [Maximum Sum Subarray (kadane's algo)](maxsum_subarr.cpp)
     - dry run
-- [Maximum length even-odd subarray](maxlen_subarr.cpp)
+- [Maximum Subarray length even-odd nos](maxlen_subarr.cpp)
+- [Maximum Subarray length of consecutive ones](max_consecutive_ones.cpp)
+- [Maximum Circular Subarray sum](max_circular_subarr_sum.cpp)
 
 **Sliding Window**
 
