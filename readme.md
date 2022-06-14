@@ -1,6 +1,19 @@
 ### A new visitor?
 you can refer readmes of
 - [LinkedList](LinkedList/)
+    <br>
+    **Corner cases**
+    - empty LL
+    - LL with one node 
+- [Arrays](Arrays/)
+    <br>
+    for every array quest, **you should ask the interviewer** if not already specified:
+    - is the array sorted?
+    - minimum no of elements in array?
+    - does the array contain negative elements
+    <br>
+    **Corner cases**
+    - would the code run properly if n=1?
 - [Matrix](Matrix/)
 - [Sorting](Sorting/)
 - [Stack](Stack/)

@@ -42,10 +42,10 @@ bool hasPair(int arr[], int n, int sum)
 /*
 sol3: O(n) time and space
 traverse from L to R
-at ith element, elements from 0 to i-1 will be in hashtable
+at ith element, elements from 0 to i-1 will be in hashtable, not the complete array but only els from 0 to i-1
 check if ith element, is forming a valid pair with any of the elements present in hashtable
 we do this by searching for sum-arr[i] in hashtable 
-if it does not form a pair, insert the value in hashtable
+if it does not form a pair, insert the element in hashtable
 */
 
 bool hasPair_hashing(int arr[], int n, int sum)
@@ -75,3 +75,29 @@ op:
 1 (true)
 1 (true)
 */
+
+/*
+if asked to print indices of the pair
+*/
+
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& arr, int target) {
+        int n = arr.size();
+        vector<int> ans(2);
+        unordered_map<int, int> um;
+        for (int i = 0; i < n; i++)
+        {
+            if(um.find(target-arr[i]) != um.end())
+            {
+                ans[0] = um[target-arr[i]];
+                ans[1] = i;
+                
+            }
+
+            um.insert({arr[i], i});
+        }    
+        
+        return ans;
+    }
+};
