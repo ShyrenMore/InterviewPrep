@@ -19,6 +19,17 @@ void printSequence()
 
 ```  
 
+Some more basic problems
+- [Print name N times](Basic_Problems/print_name_N_times.cpp)
+- [Print Linearly from 1 to N](Basic_Problems/print_1_to_N.cpp)
+- [Print Linearly from N to 1](Basic_Problems/print_N_to_1.cpp)
+- [Print Linearly from 1 to N but by backtracking](Basic_Problems/print_1_to_N_backtrack.cpp)
+    - i.e i+1 is not allowed
+- [Print Linearly from N to 1 but by backtracking](Basic_Problems/print_N_to_1_backtrack.cpp)
+    - i.e i+1 is not allowed
+
+
+
 # **Backtracking**
 
 
