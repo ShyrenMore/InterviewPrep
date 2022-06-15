@@ -41,6 +41,28 @@ Some more basic problems
     - [parameterised way](para_factorial.cpp)
     - [Functional way](functional_factorial.cpp)
 
+- [Reverse an array using recursion](reverse_array.cpp)
+- [Check if given string is palindrome using recursion](isPalindrome.cpp)
+- []
+
+## Multiple Recursion calls
+
+- General syntax
+
+```
+f()
+{
+    f()
+    f()
+    .
+    .
+}
+```
+
+- [Printing nth Fibonacci number](fibonacci.cpp)
+
+## Recursion on Subsequences
+
 # **Backtracking**
 
 
