@@ -63,6 +63,11 @@ f()
 
 ## Recursion on Subsequences
 
+- [Generate all Subsequences without recursion **(Power set)**](generate_power_set.cpp)
+- [Generate all Subsequences with recursion ](generate_recursion.cpp)
+- Dry run
+![](TBD.jpg)
+
 # **Backtracking**
 
 
