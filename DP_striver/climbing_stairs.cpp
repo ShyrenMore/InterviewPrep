@@ -15,3 +15,25 @@ way 1: 0, 1, 2, 3
 way 2: 0, 2, 3
 way 3: 0, 1, 3
 */
+
+#include <iostream>
+#include <cstring> // for memset
+#include <vector>
+using namespace std;
+
+int recursive_sol(int n)
+{
+    if(n==0)
+        return 1;
+    if (n==1)
+        return 1;
+
+    return recursive_sol(n-1) + recursive_sol(n-2);
+}
+
+int main()
+{
+    int n;
+    cin >> n;
+    cout << recursive_sol(n);
+}
