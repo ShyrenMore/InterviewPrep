@@ -68,6 +68,19 @@ f()
 - Dry run
 ![](TBD.jpg)
 
+- [Printing subsequences whose sum is K](print_subseq_sum_k.cpp)
+![](TBD.jpg)
+
+- [Print any one subsequence whose sum is K](print_one_subseq_sum_k.cpp)
+
+- [Combination Sum](combination_sum.cpp)
+
+**General sol on how to approach problems in recursion**
+- Think superficially
+- draw recursion tree and accordingly decide base cases
+- write pseudo code
+- write actual code
+
 # **Backtracking**
 
 
