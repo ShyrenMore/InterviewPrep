@@ -2,6 +2,8 @@
 
 - [Fibonacci nos](Fibonacci_num.cpp)
 - [Climbing stairs](climbing_stairs.cpp)
+- [Frog Jump](frog_jump.cpp)
+- [Frog Jump with K distance](frog_jump.cpp)
 
 # Notes/Ptrs
 
