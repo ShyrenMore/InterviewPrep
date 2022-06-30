@@ -1,11 +1,15 @@
 # Problems on DP
 
 - [Fibonacci nos](Fibonacci_num.cpp)
-- [Climbing stairs | distinct sol](climbing_stairs.cpp)
-- [Frog Jump | Min Energy + height associated array](frog_jump.cpp)
+- [Climbing stairs | Count distinct sol](climbing_stairs.cpp)
+- [Frog Jump | Min Energy to climb height](frog_jump.cpp)
 - [House Robber | Maximum sum of non-adjacent els or Max sum of subseq](house_robber.cpp)
 - [House Robber 2 | Maximum sum of non-adjacent els in CIRCULAR array](house_robber2.cpp)
 - [Ninja Training | N days, 3 tasks, calc max points](ninja_training.cpp)
+
+**DP on Grids/2D matrices**
+
+- [Grid Unique Paths | all paths are unique in rec](grid_unique_paths.cpp)
 
 # Notes/Ptrs
 
