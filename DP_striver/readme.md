@@ -9,7 +9,8 @@
 
 **DP on Grids/2D matrices**
 
-- [Grid Unique Paths | all paths are unique in rec](grid_unique_paths.cpp)
+- [Grid Unique Paths | all paths are unique in rec | down and right](grid_unique_paths.cpp)
+- [Unique Paths II](unique_paths_two.cpp)
 
 # Notes/Ptrs
 
