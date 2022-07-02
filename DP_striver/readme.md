@@ -9,8 +9,9 @@
 
 **DP on Grids/2D matrices**
 
-- [Grid Unique Paths | all paths are unique in rec | down and right](grid_unique_paths.cpp)
+- [Count Grid Unique Paths | all paths are unique in rec | down and right](grid_unique_paths.cpp)
 - [Unique Paths II](unique_paths_two.cpp)
+- [Minimum Path Sum | Each cell has a cost](min_path_sum.cpp)
 
 # Notes/Ptrs
 
