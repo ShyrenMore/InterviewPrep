@@ -12,7 +12,15 @@
 - [Count Grid Unique Paths | all paths are unique in rec | down and right](grid_unique_paths.cpp)
 - [Unique Paths II](unique_paths_two.cpp)
 - [Minimum Path Sum | Each cell has a cost](min_path_sum.cpp)
+- [Triangle | Fixed Starting Point and Variable Ending Point](triangle.cpp)
 
+**DP on Subsequences/Subsets and target**
+
+- [Subset sum equal to K | Check if problem](subset_sum_eq_to_K.cpp)
+- [Count Subsets having sum == K | Positive nums](count_subset_sum_eq_to_K.cpp)
+- [Partition Equal Subset Sum | Check if array can be partitioned into two equal subsets having same sum](partition_equal_subset_sum.cpp)
+- [Partition Array Into Two Arrays to Minimize Sum Difference | Find min abs diff](partition_min_subset_sum_diff.cpp)
+- [Partition with given difference](partition_given_diff.cpp)
 # Notes/Ptrs
 
 **How do you know it's a DP problem?**
