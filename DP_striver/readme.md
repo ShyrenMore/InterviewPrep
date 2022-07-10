@@ -20,7 +20,17 @@
 - [Count Subsets having sum == K | Positive nums](count_subset_sum_eq_to_K.cpp)
 - [Partition Equal Subset Sum | Check if array can be partitioned into two equal subsets having same sum](partition_equal_subset_sum.cpp)
 - [Partition Array Into Two Arrays to Minimize Sum Difference | Find min abs diff](partition_min_subset_sum_diff.cpp)
-- [Partition with given difference](partition_given_diff.cpp)
+- [Count no of Partitions with given difference](partition_given_diff.cpp)
+
+- [Target Sum]
+
+**Classic Problems**
+
+- [0/1 Knapsack](0_1_knapsack.cpp)
+- [Coin Change I, min coins | Coin denomination and target problem](minimum_coins.cpp)
+- [Coin Change II | number of combinations that make up that amount](coin_change2.cpp)
+- [Unbounded Knapsack](unbounded_knapsack.cpp)
+
 # Notes/Ptrs
 
 **How do you know it's a DP problem?**
