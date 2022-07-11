@@ -29,6 +29,7 @@
 - [Coin Change I, min coins | Coin denomination and target problem](minimum_coins.cpp)
 - [Coin Change II | number of combinations that make up that amount](coin_change2.cpp)
 - [Unbounded Knapsack | picking an item multiple times](unbounded_knapsack.cpp)
+- [Rod Cutting Problem | lens associated cost, return max cost](rod_cutting_problem.cpp)
 
 # Notes/Ptrs
 
