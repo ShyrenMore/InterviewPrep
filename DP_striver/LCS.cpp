@@ -66,27 +66,29 @@ public:
     {
         int n = text1.length();
         int m = text2.length();
-        vector<vector<int>> dp(n+1, vector<int>(m+1, -1));
-        
+        vector<vector<int>> dp(n + 1, vector<int>(m + 1, -1));
+
         // base case:
-        for (int i = 0; i < n; i++)
+        for (int i = 0; i <= n; i++)
             dp[i][0] = 0;
-        for (int i = 0; i < n; i++)
+        for (int i = 0; i <= m; i++)
             dp[0][i] = 0;
 
-        for (int idx1 = 1; idx1 < n; idx1++)
-            for (int idx2 = 1; idx2 < m; idx2++)
+        for (int idx1 = 1; idx1 <= n; idx1++)
+            for (int idx2 = 1; idx2 <= m; idx2++)
             {
-                if (text1[idx1] == text2[idx2])
+                if (text1[idx1 - 1] == text2[idx2 - 1])
                 {
                     int match = 1 + dp[idx1 - 1][idx2 - 1];
                     dp[idx1][idx2] = match;
                 }
-
-                int not_match = 0 + max(dp[idx1][idx2 - 1], dp[idx1 - 1][idx2]);
-                dp[idx1][idx2] = not_match;
+                else
+                {
+                    int not_match = 0 + max(dp[idx1][idx2 - 1], dp[idx1 - 1][idx2]);
+                    dp[idx1][idx2] = not_match;
+                }
             }
 
-        return dp[n + 1][m + 1];
+        return dp[n][m];
     }
 };
