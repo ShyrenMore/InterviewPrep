@@ -31,6 +31,17 @@
 - [Unbounded Knapsack | picking an item multiple times](unbounded_knapsack.cpp)
 - [Rod Cutting Problem | lens associated cost, return max cost](rod_cutting_problem.cpp)
 
+**DP on strings**
+
+- [Length of Longest Common Subsequence(LCS)](LCS.cpp)
+- [Print LCS | does not work for multiple ans](print_LCS.cpp)
+
+**DP on stocks**
+
+- [Max profit on stock | Buy/Sell only once](best_time_to_buy_stock.cpp)
+- [Max profit on stock | Buy/Sell any no of times](best_time_to_buy_stock2.cpp)
+
+
 # Notes/Ptrs
 
 **How do you know it's a DP problem?**
