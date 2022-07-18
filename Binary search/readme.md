@@ -1,0 +1,3 @@
+- [Nth root of integer](nthroot.cpp)
+- [Find Single Element in a Sorted Array](single_el_sorted.cpp)
+- [Search in a sorted rotated distinct els array | Find pivot where it is rotated](search_sorted_array.cpp)
