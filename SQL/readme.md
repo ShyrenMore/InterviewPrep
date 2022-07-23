@@ -1,0 +1,7 @@
+- [2nd Highest Salary](2nd_Highest_Salary.sql)
+- [Department Highest Salary](department-highest-salary.sql)
+- [Display Alternate Records](alternate_records.sql)
+- [Display Duplicate and it's freq of a Column](duplicate.sql)
+- [Display Duplicate Emails](duplicate-emails.sql)
+- [Pattern Matching](pattern_matching.sql)
+- [Display nth row in SQL](nth_row.sql)
