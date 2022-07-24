@@ -12,7 +12,6 @@
 - [Count Grid Unique Paths | all paths are unique in rec | down and right](grid_unique_paths.cpp)
 - [Unique Paths II](unique_paths_two.cpp)
 - [Minimum Path Sum | Each cell has a cost](min_path_sum.cpp)
-- [Triangle | Fixed Starting Point and Variable Ending Point](triangle.cpp)
 
 **DP on Subsequences/Subsets and target**
 
@@ -34,12 +33,15 @@
 **DP on strings**
 
 - [Length of Longest Common Subsequence(LCS)](LCS.cpp)
-- [Print LCS | does not work for multiple ans](print_LCS.cpp)
 
-**DP on stocks**
+**DP on stocks: Best time to buy and sell stocks**
 
 - [Max profit on stock | Buy/Sell only once](best_time_to_buy_stock.cpp)
 - [Max profit on stock | Buy/Sell any no of times](best_time_to_buy_stock2.cpp)
+- [Max profit on stock | Buy/Sell at only two time](best_time_to_buy_stock3.cpp)
+- [Max profit on stock | Buy/Sell at most k times](best_time_to_buy_stock4.cpp)
+- [Max profit on stock | Cannot Buy after sell immediately but infinite buy/sell](best_time_to_buy_stock5.cpp)
+- [Max profit on stock | Trasaction Fee but infinite buy/sell](best_time_to_buy_stock6.cpp)
 
 
 # Notes/Ptrs
