@@ -73,7 +73,8 @@ f()
 
 - [Print any one subsequence whose sum is K](print_one_subseq_sum_k.cpp)
 
-- [Combination Sum](combination_sum.cpp)
+- [Combination Sum | Items can be chosen unlimited times](combination_sum.cpp)
+- [Combination Sum 3 | At most k unique items must be chosen](combination_sum3.cpp)
 
 **General sol on how to approach problems in recursion**
 - Think superficially
