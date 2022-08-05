@@ -21,6 +21,7 @@
 - [Partition Array Into Two Arrays to Minimize Sum Difference | Find min abs diff](partition_min_subset_sum_diff.cpp)
 - [Count no of Partitions with given difference](partition_given_diff.cpp)
 - [Target Sum | variation of prev question](target_sum.cpp)
+- [Permutation Sum | count subset permutation == k](permutation_sum.cpp)
 
 **Classic Problems**
 
