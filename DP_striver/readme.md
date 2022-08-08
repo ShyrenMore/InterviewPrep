@@ -44,6 +44,10 @@
 - [Max profit on stock | Cannot Buy after sell immediately but infinite buy/sell](best_time_to_buy_stock5.cpp)
 - [Max profit on stock | Trasaction Fee but infinite buy/sell](best_time_to_buy_stock6.cpp)
 
+**DP on LIS**
+
+- [Len of Longest Increasing Subsequence(LIS) using DP](LIS.cpp)
+- [Len of Longest Increasing Subsequence(LIS) using Binary Search | O(nlogn) time](LIS2.cpp)
 
 # Notes/Ptrs
 

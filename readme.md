@@ -19,13 +19,10 @@ you can refer readmes of
 - [Stack](Stack/)
 - [Queue](Queue/)
 - [Hashing](Hashing/)
+- [Dynamic Programming](DP_striver/)
 
 ### What is this repo about?
 - Interview prep 
-
-### Work halted for indefinite period
-- [Dynamic Programming](DynamicProgramming/)
-
 
 ### Some resources and hacks 
 
