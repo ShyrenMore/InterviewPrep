@@ -47,20 +47,26 @@ and ans is going to be maximum of all the values
 
 maxEnding(idx) = max(maxEnding(idx-1) + arr[i], arr[i])
 
-Time: O(n)
+Time: O(n) Space: O(n)
 */
 
 int calcMaxSubArrSum_eff(int arr[], int n)
 {
     int res = arr[0];
-    int maxEnding = arr[0];
+    int maxEnding[n];
+    maxEnding[0] = arr[0];
 
     for (int i = 1; i < n; i++)
     {
-        maxEnding = max(maxEnding + arr[i], arr[i]);
-        res = max(res, maxEnding);
+        maxEnding[i] = max(maxEnding[i-1] + arr[i], arr[i]);
+        res = max(res, maxEnding[i]);
     }
 
+    cout << "\nMaxending array :: "
+         << "\n";
+    for(auto x: maxEnding)
+        cout << x << " ";
+    cout << "\n";
     return res;
 }
 
