@@ -355,9 +355,7 @@ Extra space for links | Extra space might be needed to achieve same performance 
     - **most asked interview question**
 
 - [Longest common span with same sum in two binary arrays](longest_span_with_sameSum_in_binary_arr.cpp)
-
 - [Longest *consecutive* subsequence](longest_CONSECUTIVE_subsequence.cpp)
-
 - [Count Distinct Elements in Every Window](distinct_el_in_window.cpp)
-
 - [More than n/k Occurences](n_k_occurences.cpp)
+- [First Unique Char in a string](first_unique_char.cpp)
