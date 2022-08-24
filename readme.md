@@ -24,6 +24,10 @@ you can refer readmes of
 ### What is this repo about?
 - Interview prep 
 
+### Work in progress
+- Trees and graph
+- Trie
+
 ### Some resources and hacks 
 
 - Cheatsheet for time and space complexity:
