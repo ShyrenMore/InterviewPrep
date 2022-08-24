@@ -65,6 +65,7 @@ public:
         Node *node = root;
         for (int i = 0; i < word.length(); i++)
         {
+            // does this node contains the char?
             if(node->containsKey(word[i]) == 0)
                 node->put(word[i], new Node());
             // move to ref trie
