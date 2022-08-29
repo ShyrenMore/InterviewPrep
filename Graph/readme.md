@@ -108,4 +108,7 @@ h {CDE} = 2
 # Questions
 
 - [Breadth-first-search (BFS)](BFS.cpp)
-
+- [Depth-first-search (BFS)](DFS.cpp)
+- [Number of Provinces | no of components](no_of_provinces.cpp)
+- [Number of Islands | Number of Connected Components in Matrix](no_of_islands.cpp)
+- [Flood Fill using DFS](flood_fill.cpp)
