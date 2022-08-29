@@ -21,18 +21,18 @@ private:
             int c = q.front().second;
             q.pop();
 
-            
             for (int i = 0; i < 4; i++)
             {
-                int neighbour_row = row + delta_row[i];
-                int neighbour_col = col + delta_col[i];
+                int neighbour_row = r + delta_row[i];
+                int neighbour_col = c + delta_col[i];
 
                 // for each neighbour check boundary
                 if (neighbour_row >= 0 && neighbour_row < n && neighbour_col >= 0 && neighbour_col < m)
                 {
+                    // check for same color and prev visited
                     if (grid[neighbour_row][neighbour_col] == '1' && !visited[neighbour_row][neighbour_col])
                     {
-                        visited[r][c] = 1;
+                        visited[neighbour_row][neighbour_col] = 1;
                         q.push({neighbour_row, neighbour_col});
                     }
                 }
