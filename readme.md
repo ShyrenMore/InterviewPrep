@@ -79,7 +79,21 @@ Else
 
 ```
 
-- Identifying the solution methodology by looking at constraints 
+<hr>
+
+### Comparison of operations b/w common DS
+
+Operation | Unsorted Arr | Sorted Arr | Linked List | BST(Balanced) | Hash Table 
+------- | :------: | :------: | :------:  | :------: | :------: |
+Search | O(n) | O(logn) | O(n) | O(logn) |  O(1) |
+Insert | O(1) | O(n) | O(1) <br> for sorted LL: O(n) | O(logn) | O(1) |
+Delete | O(n) | O(n) | O(n) |  O(logn) | O(1) |
+Get Closest value | O(n) | O(logn) | O(n) | O(logn) | O(1) |
+Sorted Traversal | O(nlogn) | O(n) | O(nlogn)/ O(n) for sorted LL | O(n) | O(nlogn)
+
+-  Here sorted traversal implies printing items in sorted order
+
+### Identifying the solution methodology by looking at constraints 
 - upto n<=10^3 naive sols will work most of the times
 
 n-value | Maximum time it can take |
