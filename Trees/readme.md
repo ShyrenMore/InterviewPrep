@@ -64,3 +64,4 @@ Popular traversals:
 - [Children sum property](Children_sum_property/main.cpp)
 - [Width of binary tree](Width/main.cpp)
 - [Check for balanced tree](Balanced_tree/main.cpp)
+- [Vertical Order Traversal of Binary Tree](vertical_traversal.cpp)
