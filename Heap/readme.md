@@ -36,8 +36,26 @@ eg
     10 15 50 40
 ```
 
+# Application of Heap
+
+- Heap Sort: Heap Sort uses Binary Heap to sort an array in `O(nLogn)` time
+- Priority Queue: Priority queues can be efficiently implemented using Binary Heap because it supports `insert(), delete() and extractmax(), decreaseKey()` operations in `O(logn)` time. 
+- Graph Algorithms: The priority queues are especially used in Graph Algorithms like Dijkstra’s Shortest Path and Prim’s Minimum Spanning Tree.
+
 # Binary heap
 
-- 
+A Binary Heap is a Binary Tree with following properties.
+- It’s a complete tree (All levels are completely filled except possibly **the last level and the last level has all keys as left as possible**). This property of Binary Heap makes them suitable to be stored in an array.
+- A Binary Heap is either Min Heap or Max Heap. In a Min Binary Heap, the key at root must be minimum among all keys present in Binary Heap. The same property must be recursively true for all nodes in Binary Tree. 
+
+## Properties of binary heap
+- the root element will be `arr[0]`
+- how to get ith node's children and its own value
+
+`arr[(i-1)/2]` | returns parent node
+`arr[2 * i + 1]` | returns left child node
+`arr[2 * i + 2]` | returns right child node
+
+- The traversal method use to achieve Array representation is Level Order
 
 - [Design min-heap](min_heap.cpp)
