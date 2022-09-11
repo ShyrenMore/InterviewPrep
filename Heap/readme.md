@@ -65,3 +65,16 @@ Index | return value
 - Insert, Delete, Decrease Key(Update), Extract Min(delete min), Heapify(remove violation)
 - [Theory & explanation](MinHeap/readme.md)
 - [Code](MinHeap/min_heap.cpp)
+
+# Problems
+
+- [Priority Queue in STL](priority_queue.cpp)
+- [Implementing min-heap in STL O(logN)](min_heap_stl.cpp)
+    - you can also multiply els of max-heap by -1 to convert it to min-heap
+- Creating priority queue using existing arr : O(N)
+
+```
+int arr[] = {10, 5, 15};
+priority_queue<int> pq(arr, arr+3);
+```
+
