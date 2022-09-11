@@ -135,3 +135,18 @@ perfect squares have odd factors
 the parity of an integer is the (non-negative) remainder obtained when dividing it by 2. For example, the parity of 246 is 0 and the parity of 11 is 1. In other words, an even number has parity 0 and an odd number has parity 1
 
 n & (n - 1) drops the lowest set bit: https://leetcode.com/problems/number-of-1-bits/discuss/55255/C%2B%2B-Solution%3A-n-and-(n-1).
+
+You can reverse a rows of any matrix by doing: 
+for(int i = 0; i < n; i++)
+	reverse(begin(matrix[i]), end(matrix[i]));
+
+for reversing cols of a matrix:
+reverse(begin(matrix), end(matrix));
+
+Subarray question? 
+Do arr contain only positive els: Go for sliding window 
+else prefix sum
+
+For unsetting the bits of a specific no, do an XOR with it
+For setting bits of a specific no, do an OR with it
+eg: https://leetcode.com/problems/longest-nice-subarray/submissions/
