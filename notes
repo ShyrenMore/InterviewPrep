@@ -150,3 +150,6 @@ else prefix sum
 For unsetting the bits of a specific no, do an XOR with it
 For setting bits of a specific no, do an OR with it
 eg: https://leetcode.com/problems/longest-nice-subarray/submissions/
+
+For reversing a vector of pair
+sort(engineers.rbegin(), engineers.rend());
