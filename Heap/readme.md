@@ -52,10 +52,27 @@ A Binary Heap is a Binary Tree with following properties.
 - the root element will be `arr[0]`
 - how to get ith node's children and its own value
 
-`arr[(i-1)/2]` | returns parent node
-`arr[2 * i + 1]` | returns left child node
-`arr[2 * i + 2]` | returns right child node
+Index | return value
+------- | :------: |
+`arr[(i-1)/2]` | returns parent node |
+`arr[2 * i + 1]` | returns left child node |
+`arr[2 * i + 2]` | returns right child node |
 
 - The traversal method use to achieve Array representation is Level Order
+
+**Insert operation in binary heap**
+
+- While doing insertion in array, we need to ensure that binary heap values still hold true 
+
+- Steps:
+1) Insert in the tree 
+size + 1 and arr[size - 1] = key 
+2) Compare newly inserted node with parent
+if node is smaller swap it with parent 
+swap(parent, keyNode)
+3) we do step 2 again until:
+    - newNode becomes greater than it's parent or
+    - we reached the root
+- Time: insertion takes O(1) and traverlling across height takes O(log(size)) so overall O(log(size))
 
 - [Design min-heap](min_heap.cpp)
