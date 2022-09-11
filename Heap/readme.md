@@ -60,48 +60,8 @@ Index | return value
 
 - The traversal method use to achieve Array representation is Level Order
 
-**Insert operation in binary min-heap**
+## Operations on Binary heap
 
-- While doing insertion in array, we need to ensure that binary heap values still hold true 
-
-- Steps:
-1) Insert in the tree 
-size + 1 and arr[size - 1] = key 
-2) Compare newly inserted node with parent
-if node is smaller swap it with parent 
-swap(parent, keyNode)
-3) we do step 2 again until:
-    - newNode becomes greater than it's parent or
-    - we reached the root
-- Time: insertion takes O(1) and traverlling across height takes O(log(size)) so overall O(log(size))
-
-**Heapify operation (remove violation) in binary min-heap**
-
-- argument for this function will be index of node which is violating the heap property i.e in case of min-heap the node which is greater than it's children
-- compare node with left and right and take min(node, left, right)
-
-```
-
-if(node == min): no changes are required 
-else:  
-- swap(node, child_with_min_val)
-- Recursively call heapify for particular child
-
-```
-- Time complexity: recursive call for child is ``O(h) = O(logN)`` since heap is complete tree
-- Space complexity: `O(h)` stack space
-
-**getMin(Peak) operation in binary min-heap**
-- return root of the min-heap i.e `arr[0]`
-
-**Extract min: delete the minimum from min-heap tree**
-
-```
-- swap root with last el: swap(arr[0], arr[size-1])
-- decrement size: so og root will get lost
-- call heapify(root) to make the resulting structure a proper heap
-```
-
-- Time: O(logN) due to calling min_heapify 
-
-[Design min-heap](min_heap.cpp)
+- Insert, Delete, Decrease Key(Update), Extract Min(delete min), Heapify(remove violation)
+- [Theory & explanation](MinHeap/readme.md)
+- [Code](MinHeap/min_heap.cpp)
