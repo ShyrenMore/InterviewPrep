@@ -153,3 +153,6 @@ eg: https://leetcode.com/problems/longest-nice-subarray/submissions/
 
 For reversing a vector of pair
 sort(engineers.rbegin(), engineers.rend());
+
+Getting binary representation of dec in string format: one-liner
+string binaryRep = bitset<8>(decimalNo).to_string();
