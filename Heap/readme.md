@@ -78,3 +78,5 @@ int arr[] = {10, 5, 15};
 priority_queue<int> pq(arr, arr+3);
 ```
 
+- [Sort a k-sorted array](k-sorted-arr.cpp)
+- [Merge K sorted lists | custom heapCmp struct instead of greater<int>](k-sorted-list.cpp)
