@@ -80,3 +80,4 @@ priority_queue<int> pq(arr, arr+3);
 
 - [Sort a k-sorted array](k-sorted-arr.cpp)
 - [Merge K sorted lists | custom heapCmp struct instead of greater<int>](k-sorted-list.cpp)
+- [K Largest elements](k-largest-els.cpp)
