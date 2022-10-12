@@ -105,6 +105,36 @@ h {CDE} = 2
   <img src="imgs/list_vs_matrix.jpg" width="680px" alt="sort" title="sort"/>
 </p>
 
+# Important snippets
+
+- Traversing boundary elements of matrix n x m
+```
+for (int r = 0; r < n; r++){
+    for (int c = 0; c < m; c++) {
+        if(r == 0 || c == 0 || r == n-1 || c == m-1){
+            // r,c will be boundary element
+        }
+    }
+}
+```
+- Traversing up, down, left, right neighbours
+```
+int delta_row[] = {-1, 0, 1, 0};
+int delta_col[] = {0, 1, 0, -1};
+
+for (int i = 0; i < 4; i++)
+{
+    int nrow = r + delta_row[i];
+    int ncol = c + delta_col[i];
+    if(nrow >= 0 and nrow < n and ncol >= 0 and ncol < m)
+    {
+        // extra check for land/aanything goes here
+            // DFS or BFS 
+            // dfs(neighbour_row, neighbour_col, visited, grid);
+    }
+}
+```
+
 # Questions
 
 - [Breadth-first-search (BFS)](BFS.cpp)
@@ -114,3 +144,4 @@ h {CDE} = 2
 - [Flood Fill using DFS](flood_fill.cpp)
 - [Rotten Oranges | Min time | BFS](rotten_orange.cpp)
 - [Surrounded Regions | Replace O's with X's | DFS](surrounded_regions.cpp)
+- [Number of Enclaves | Muti-source BFS | Traverse Boundary Elements](no_of_enclaves.cpp)
