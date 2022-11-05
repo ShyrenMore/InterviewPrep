@@ -10,8 +10,7 @@ you can refer readmes of
     for every array quest, **you should ask the interviewer** if not already specified:
     - is the array sorted?
     - minimum no of elements in array?
-    - does the array contain negative elements
-    <br>
+    - does the array contain negative elements <br>
     **Corner cases**
     - would the code run properly if n=1?
 - [Matrix](Matrix/)
@@ -20,6 +19,10 @@ you can refer readmes of
 - [Queue](Queue/)
 - [Hashing](Hashing/)
 - [Dynamic Programming](DP_striver/)
+- [Graph](Graph/) <br>
+    **Corner cases**
+    - would the dfs code run properly for 1x1 matrix?
+
 
 ### What is this repo about?
 - Interview prep 
