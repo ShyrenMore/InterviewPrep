@@ -156,3 +156,8 @@ for (int i = 0; i < 4; i++)
 - [Topological Sort Algorithm, Kahn's Algorithm | BFS](kahn_algo.cpp)
 <!-- - [Course Schedule i | Topo sort variation](course_schedule.cpp) -->
 - [Find Eventual Safe States using Kahn (BFS) | AC on leetcode](eventual_state_kahn.cpp)
+
+
+## Disjoint set
+
+- [Union by Rank and Path Compression](union_by_rank.cpp)
