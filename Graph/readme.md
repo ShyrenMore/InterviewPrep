@@ -157,6 +157,8 @@ for (int i = 0; i < 4; i++)
 <!-- - [Course Schedule i | Topo sort variation](course_schedule.cpp) -->
 - [Find Eventual Safe States using Kahn (BFS) | AC on leetcode](eventual_state_kahn.cpp)
 
+## Shortest path
+- [Nearest shortest distance to exit of maze | BFS](nearest_exit_entrance.cpp)
 
 ## Disjoint set
 
