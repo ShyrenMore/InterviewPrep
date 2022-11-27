@@ -4,9 +4,6 @@
 - So whenever we have random conncetions among nodes, we use Graph DS
 - Graph is represented by pair of sets 
 ```G = (V, E)```
-<br>
-
-    here 
 - V is set of vertices, V = {v1, v2..}
 - E set of edges, E = {(v1, v2), (v3, v4),...}
 
@@ -163,3 +160,7 @@ for (int i = 0; i < 4; i++)
 ## Disjoint set
 
 - [Union by Rank and Path Compression](union_by_rank.cpp)
+
+## Misc
+
+- [Min time to collect apples | create Graph using Adj | DFS](collect_all_apples.cpp)
