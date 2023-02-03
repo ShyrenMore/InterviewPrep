@@ -34,7 +34,7 @@
 **DP on strings**
 
 - [Length of Longest Common Subsequence(LCS)](LCS.cpp)
-- [Length of Longest Common Substring(Iterating over LCS)](LCSubstr.cpp)
+- [Length of Longest Common Substring(Without Tabulation sol)](LCSubstr.cpp)
 
 **DP on stocks: Best time to buy and sell stocks**
 
