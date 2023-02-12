@@ -593,3 +593,32 @@ midPos=2+5+1=8
 
 min=11, max=11
 ```
+
+## Find row with max 1s in O(N+M)
+
+![image](https://user-images.githubusercontent.com/56788568/218310356-61a257cd-4f69-40b6-bb30-1bd4c8d36215.png)
+
+[Problem Link](https://practice.geeksforgeeks.org/problems/row-with-max-1s0023/1)
+
+Approach to follow:
+- To solve in O(N + M) start from the top right corner of the matrix and keep 
+- Track of the index of the row which has maximum 1s. 
+- Go left if you encounter 1
+- Go down if you encounter 0
+- Stop when you reach the last row or first column. 
+
+Pseudo code 
+
+```
+int i=0, j = m-1, res = -1;
+    while(i<n&&j>=0){
+        if(arr[i][j]==1){
+            j--;
+            res = i;
+        }
+        else {
+            i++;
+        }
+    }
+    return res;
+```
