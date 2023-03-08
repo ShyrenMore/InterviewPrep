@@ -51,6 +51,10 @@
 
 - [Len of Longest Increasing Subsequence(LIS) using DP](LIS.cpp)
 - [Len of Longest Increasing Subsequence(LIS) using Binary Search | O(nlogn) time](LIS2.cpp)
+- [Minimum Deletions to make array sorted](min_deletions_to_sort.cpp)
+- [Maximum sum increasing subsequence](maxi_sum_subseq.cpp)
+- [Longest Bitonic subsequence](lbs.cpp)
+- [Longest chain of pairs](max_len_pairs.cpp)
 
 # Notes/Ptrs
 
