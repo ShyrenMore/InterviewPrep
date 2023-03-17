@@ -8,7 +8,7 @@ Link: https://youtu.be/7zmgQSJghpo
 class Solution
 {
 private:
-    void dfs(int row, int col, vector<vector<int>> &grid, vector<vector<int>> &vis, vector<pair<int, int>> &vec, int base_x, int base_y)
+    void dfs(int row, int col, vector<vector<int>> &grid, vector<vector<int>> &vis, vector<pair<int, int>> &vec, int &base_x, int &base_y)
     {
         int n = grid.size();
         int m = grid[0].size();
@@ -26,9 +26,7 @@ private:
             {
                 // extra check for land/aanything goes here
                 if (!vis[nrow][ncol] && grid[nrow][ncol])
-                    dfs(nrow, ncol, vis, grid, vec, base_x, base_y);
-                // DFS or BFS
-                // dfs(neighbour_row, neighbour_col, visited, grid);
+                    dfs(nrow, ncol, grid, vis, vec, base_x, base_y);
             }
         }
     }
@@ -48,7 +46,8 @@ public:
                 if (!vis[i][j] && grid[i][j])
                 {
                     vector<pair<int, int>> vec;
-                    dfs(i, j, grid, vis, vec, i, j);
+                    int base_x = i, base_y = j; // initialize base_x and base_y to current cell
+                    dfs(i, j, grid, vis, vec, base_x, base_y);
                     s.insert(vec);
                 }
             }

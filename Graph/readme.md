@@ -152,8 +152,7 @@ for (int i = 0; i < 4; i++)
 
 ## Topological Sorting
 
-- only for Directed Acyclic Graphs (DAGs)
-
+- only for **Directed Acyclic Graphs (DAGs)**
 - Topological Sort: [DFS](topological_sort.cpp) | [BFS (Kahn)](kahn_algo.cpp)
 - Check for cycle in a Directed Graph [DFS](check_cycle_directed.cpp) | [BFS (Kahn's algo)](check_cycle_directed_bfs.cpp)
 - [Course Schedule - 1 | Only check | Using Kahn(BFS)](course_1.cpp)
