@@ -145,18 +145,18 @@ for (int i = 0; i < 4; i++)
 - [Number of distinct islands | Leetcode premium](no_of_dist_islands.cpp)
 - [Check if Graph is Bi-partite using BFS](check_bipartite.cpp)
 - [Check if Graph is Bi-partite using DFS](check_bipartite_dfs.cpp)
-- [Check for cycle in a Directed Graph using DFS](check_cycle_directed.cpp)
-- [Check for cycle in an Directed graph using BFS | Kahn's algo](check_cycle_directed_bfs.cpp)
 - [Check for cycle in an Undirected graph using DFS](check_cycle_undirected_dfs.cpp)
 
 ## Topological Sorting
+
+- only for Directed Acyclic Graphs (DAGs)
 - [Topological Sort Algorithm | DFS](topological_sort.cpp)
 - [Topological Sort Algorithm, Kahn's Algorithm | BFS](kahn_algo.cpp)
+- [Check for cycle in a Directed Graph using DFS](check_cycle_directed.cpp)
+- [Check for cycle in an Directed graph using BFS | Kahn's algo](check_cycle_directed_bfs.cpp)
 - [Course Schedule - 1 | Only check | Using Kahn(BFS)](course_1.cpp)
 - [Course Schedule - 2 | Print order | Using Kahn(BFS)](course_2.cpp)
-
 - [Find Eventual Safe States using Cycle Detection(DFS) | TLE on leetcode](eventual_state.cpp)
-<!-- - [Course Schedule i | Topo sort variation](course_schedule.cpp) -->
 - [Find Eventual Safe States using Kahn (BFS) | AC on leetcode](eventual_state_kahn.cpp)
 
 ## Shortest path
