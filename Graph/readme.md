@@ -141,22 +141,23 @@ for (int i = 0; i < 4; i++)
 - [Flood Fill using DFS](flood_fill.cpp)
 - [Rotten Oranges | Min time | BFS](rotten_orange.cpp)
 - [Surrounded Regions | Replace O's with X's | DFS](surrounded_regions.cpp)
-- [Number of Enclaves | Muti-source BFS | Traverse Boundary Elements](no_of_enclaves.cpp)
+- Number of Enclaves 
+    - [Muti-source BFS | Traverse Boundary Elements](no_of_enclaves_bfs.cpp)
+    - [Multi-source DFS](no_of_enclaves_dfs.cpp) 
 - [Number of distinct islands | Leetcode premium](no_of_dist_islands.cpp)
 - [Check if Graph is Bi-partite using BFS](check_bipartite.cpp)
 - [Check if Graph is Bi-partite using DFS](check_bipartite_dfs.cpp)
 - [Check for cycle in an Undirected graph using DFS](check_cycle_undirected_dfs.cpp)
+- [Find Eventual Safe States using Cycle Detection(DFS) | TLE on leetcode](eventual_state.cpp)
 
 ## Topological Sorting
 
 - only for Directed Acyclic Graphs (DAGs)
-- [Topological Sort Algorithm | DFS](topological_sort.cpp)
-- [Topological Sort Algorithm, Kahn's Algorithm | BFS](kahn_algo.cpp)
-- [Check for cycle in a Directed Graph using DFS](check_cycle_directed.cpp)
-- [Check for cycle in an Directed graph using BFS | Kahn's algo](check_cycle_directed_bfs.cpp)
+
+- Topological Sort: [DFS](topological_sort.cpp) | [BFS (Kahn)](kahn_algo.cpp)
+- Check for cycle in a Directed Graph [DFS](check_cycle_directed.cpp) | [BFS (Kahn's algo)](check_cycle_directed_bfs.cpp)
 - [Course Schedule - 1 | Only check | Using Kahn(BFS)](course_1.cpp)
 - [Course Schedule - 2 | Print order | Using Kahn(BFS)](course_2.cpp)
-- [Find Eventual Safe States using Cycle Detection(DFS) | TLE on leetcode](eventual_state.cpp)
 - [Find Eventual Safe States using Kahn (BFS) | AC on leetcode](eventual_state_kahn.cpp)
 
 ## Shortest path
