@@ -148,9 +148,14 @@ for (int i = 0; i < 4; i++)
 - [Check for cycle in a Directed Graph using DFS](check_cycle_directed.cpp)
 - [Check for cycle in an Directed graph using BFS | Kahn's algo](check_cycle_directed_bfs.cpp)
 - [Check for cycle in an Undirected graph using DFS](check_cycle_undirected_dfs.cpp)
-- [Find Eventual Safe States using Cycle Detection(DFS) | TLE on leetcode](eventual_state.cpp)
+
+## Topological Sorting
 - [Topological Sort Algorithm | DFS](topological_sort.cpp)
 - [Topological Sort Algorithm, Kahn's Algorithm | BFS](kahn_algo.cpp)
+- [Course Schedule - 1 | Only check | Using Kahn(BFS)](course_1.cpp)
+- [Course Schedule - 2 | Print order | Using Kahn(BFS)](course_2.cpp)
+
+- [Find Eventual Safe States using Cycle Detection(DFS) | TLE on leetcode](eventual_state.cpp)
 <!-- - [Course Schedule i | Topo sort variation](course_schedule.cpp) -->
 - [Find Eventual Safe States using Kahn (BFS) | AC on leetcode](eventual_state_kahn.cpp)
 
