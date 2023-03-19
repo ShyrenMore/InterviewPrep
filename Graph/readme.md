@@ -149,6 +149,7 @@ for (int i = 0; i < 4; i++)
 - [Check if Graph is Bi-partite using DFS](check_bipartite_dfs.cpp)
 - [Check for cycle in an Undirected graph using DFS](check_cycle_undirected_dfs.cpp)
 - [Find Eventual Safe States using Cycle Detection(DFS) | TLE on leetcode](eventual_state.cpp)
+- [Word Ladder-1 | len of Shortest path](word_lad_1.cpp)
 
 ## Topological Sorting
 
