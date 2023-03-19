@@ -160,6 +160,7 @@ for (int i = 0; i < 4; i++)
 - [Course Schedule - 1 | Only check | Using Kahn(BFS)](course_1.cpp)
 - [Course Schedule - 2 | Print order | Using Kahn(BFS)](course_2.cpp)
 - [Find Eventual Safe States using Kahn (BFS) | AC on leetcode](eventual_state_kahn.cpp)
+- [Alien Dictionary](alien_dict.cpp)
 
 ## Shortest path
 - [Nearest shortest distance to exit of maze | BFS](nearest_exit_entrance.cpp)
