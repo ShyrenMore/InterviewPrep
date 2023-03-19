@@ -150,6 +150,7 @@ for (int i = 0; i < 4; i++)
 - [Check for cycle in an Undirected graph using DFS](check_cycle_undirected_dfs.cpp)
 - [Find Eventual Safe States using Cycle Detection(DFS) | TLE on leetcode](eventual_state.cpp)
 - [Word Ladder-1 | len of Shortest path](word_lad_1.cpp)
+- [Word Ladder-2 | **print all** the shortest paths | Interesting implementation](word_lad_2.cpp)
 
 ## Topological Sorting
 
