@@ -56,6 +56,10 @@
 - [Longest Bitonic subsequence](lbs.cpp)
 - [Longest chain of pairs](max_len_pairs.cpp)
 
+**Misc**
+
+- [Interleaved Strings](interleaved_str.cpp)
+
 # Notes/Ptrs
 
 **How do you know it's a DP problem?**
