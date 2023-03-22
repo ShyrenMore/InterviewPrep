@@ -163,7 +163,10 @@ for (int i = 0; i < 4; i++)
 - [Alien Dictionary](alien_dict.cpp)
 
 ## Shortest path
+
 - [Nearest shortest distance to exit of maze | BFS](nearest_exit_entrance.cpp)
+- [Shortest Path in Undirected Graph | BFS](shortest_path_undirected.cpp)
+- [Print shortest Path in Undirected Weighted Graph | Djikstra](shortest_path_undirected_weighted.cpp)
 
 ## Disjoint set
 
