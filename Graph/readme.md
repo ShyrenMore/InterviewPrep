@@ -156,6 +156,7 @@ for (int i = 0; i < 4; i++)
 
 - only for **Directed Acyclic Graphs (DAGs)**
 - Topological Sort: [DFS](topological_sort.cpp) | [BFS (Kahn)](kahn_algo.cpp)
+    - Kahn’s algorithm works by keeping track of the number of incoming edges into each node (indegree). It works by repeatedly visiting the nodes with an indegree of zero and deleting all the edges associated with it leading to a decrement of indegree for the nodes whose incoming edges are deleted. This process continues until no element with zero indegree can be found.
 - Check for cycle in a Directed Graph [DFS](check_cycle_directed.cpp) | [BFS (Kahn's algo)](check_cycle_directed_bfs.cpp)
 - [Course Schedule - 1 | Only check | Using Kahn(BFS)](course_1.cpp)
 - [Course Schedule - 2 | Print order | Using Kahn(BFS)](course_2.cpp)
