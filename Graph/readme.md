@@ -162,6 +162,7 @@ for (int i = 0; i < 4; i++)
 - [Course Schedule - 2 | Print order | Using Kahn(BFS)](course_2.cpp)
 - [Find Eventual Safe States using Kahn (BFS) | AC on leetcode](eventual_state_kahn.cpp)
 - [Alien Dictionary](alien_dict.cpp)
+- [Longest Cycle in a Graph | O(N) time and space using Topo Sort(Kahn)](longest_cycle.cpp)
 
 ## Shortest path
 
