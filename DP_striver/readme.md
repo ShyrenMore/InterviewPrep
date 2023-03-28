@@ -37,6 +37,7 @@
 - [Length of Longest Common Substring(Without Tabulation sol)](LCSubstr.cpp)
 - [Len of Longest Palindromic Subsequence | LCS b/w str and rev of str](LPalS.cpp)
 - [Len of Longest Repeating Subsequence | LCS b/w str and str but both indices should be different](LRS.cpp)
+- [Number of times the second string occurs in the first string | No-LCS involved](string_subseq.cpp)
 
 **DP on stocks: Best time to buy and sell stocks**
 
