@@ -7,3 +7,4 @@
 - [Rotate Unsorted Array by D steps](Arrays/rotate_unsorted_array_by_D_steps.java)
 - [Remove Duplicates](Arrays/remove_dupli.java)
 - [Union of Two Sorted Arrays](Arrays/union_two_sorted_arrays.java)
+- [Intersection of Two Sorted Arrays](Arrays/intersect_two_arrays.java)
