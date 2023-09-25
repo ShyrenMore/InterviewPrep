@@ -8,3 +8,5 @@
 - [Remove Duplicates](Arrays/remove_dupli.java)
 - [Union of Two Sorted Arrays](Arrays/union_two_sorted_arrays.java)
 - [Intersection of Two Sorted Arrays](Arrays/intersect_two_arrays.java)
+- [Equilibrium Point](Arrays/EquilibriumPoint.java)
+- [Maximum sum subarray](Arrays/Kadane.java)
