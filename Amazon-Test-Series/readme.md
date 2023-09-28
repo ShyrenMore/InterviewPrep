@@ -10,3 +10,9 @@
 - [Intersection of Two Sorted Arrays](Arrays/intersect_two_arrays.java)
 - [Equilibrium Point](Arrays/EquilibriumPoint.java)
 - [Maximum sum subarray](Arrays/Kadane.java)
+
+## Matrix
+- [Rotate by 90 degree](Matrix/Rotateby90degree.java)
+- [Spirally traversing a matrix](Matrix/SpiralTraversal.java)
+- [Boundary traversal of matrix](Matrix/BoundaryTraversal.java)
+- []
