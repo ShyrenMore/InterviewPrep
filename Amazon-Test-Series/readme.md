@@ -15,4 +15,7 @@
 - [Rotate by 90 degree](Matrix/Rotateby90degree.java)
 - [Spirally traversing a matrix](Matrix/SpiralTraversal.java)
 - [Boundary traversal of matrix](Matrix/BoundaryTraversal.java)
-- []
+
+## Misc
+
+- [Reverse a String without any duplicates](Misc/ReverseWithoutDupli.java): A good problem on understanding how HashMap works in Java
