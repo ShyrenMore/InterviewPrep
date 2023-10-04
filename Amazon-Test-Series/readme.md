@@ -19,3 +19,4 @@
 ## Misc
 
 - [Reverse a String without any duplicates](Misc/ReverseWithoutDupli.java): A good problem on understanding how HashMap works in Java
+- [Boolean Matrix](Misc/BooleanMatrix.java): Had to use a boolean array instead of HashSet to put it under time constraint
